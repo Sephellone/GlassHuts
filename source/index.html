@@ -4,9 +4,108 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="icon" href="favicon.ico">
     <link rel="stylesheet" href="css/style.min.css">
-    <title>Магазин «CAT ENERGY»</title>
+    <title>The Glass Huts</title>
   </head>
-  <body>
+  <body class="page__body">
+    <header class="page__header main-header">
+      <a class="main-header__logo-link" href="#">
+        <img class="main-header__logo" src="img/logo.svg" alt="The Glass Huts logo" width="70" height="65">
+      </a>
+      <div class="main-header__nav-wrapper">
+        <nav class="main-header__nav main-nav">
+          <ul class="main-nav__list">
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="#">Home</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="#">the hut</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="#">The area</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="#">booking</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="#">about us</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="#">faq</a>
+            </li>
+          </ul>
+        </nav>
+        <select class="main-header__language" name="language" id="language">
+          <option value="en">English</option>
+          <option value="de">German</option>
+          <option value="dk" selected>Danish</option>
+        </select>
+        <a class="main-header__booking-link" href="#">Book Now</a>
+        <button class="main-header__menu-toggler">
+          <span class="visually-hidden">Menu</span>
+        </button>
+    </div>
+    </header>
+    <main class="page__main main-index">
+      <section class="main-index__section main-index__header"></section>
+      <section class="main-index__section main-index__cabins"></section>
+      <section class="main-index__section main-index__forest"></section>
+      <section class="main-index__section main-index__facilities facilities"></section>
+      <section class="main-index__section main-index__about"></section>
+      <section class="main-index__section main-index__contacts"></section>
+    </main>
 
+    <!-- footer  -->
+    <footer class="page__footer footer">
+      <!-- subscription section -->
+      <div class="footer__subscription">
+        <h2 class="visually-hidden">Subscribe to our Newsletter</h2>
+        <label class="footer__subscription-label" for="subscription">
+          Newsletter
+        </label>
+        <input class="footer__subscription-input" type="email" placeholder="Email Adrdess" id="subscription">
+        <button type="button">
+          <span class="visually-hidden">Subscribe</span>
+        </button>
+        <p class="footer__text">
+          Sign up to our newsletter for special things and receive 10% off your next order.
+        </p>
+      </div>
+
+      <!-- links section  -->
+      <div class="footer__links">
+        <!-- Official docs links -->
+        <ul class="footer__links-list">
+          <li class="footer__links-item">
+            <a class="footer__link"  href="#">TERMS AND CONDITIONS</a>
+          </li>
+          <li class="footer__links-item">
+            <a class="footer__link"  href="#">CENCELLATION POLICY</a>
+          </li>
+          <li class="footer__links-item">
+            <a class="footer__link"  href="#">PRIVACY POLICY</a>
+          </li>
+        </ul>
+        <!-- payment methods list -->
+        <ul class="footer__payment-list">
+          <li class="footer__payment-item">
+            <span class="visually-hidden">Paypal</span>
+          </li>
+          <li class="footer__payment-item">
+            <span class="visually-hidden">MasterCard</span>
+          </li>
+          <li class="footer__payment-item">
+            <span class="visually-hidden">Visa</span>
+          </li>
+          <li class="footer__payment-item">
+            <span class="visually-hidden">Bank Transfer</span>
+          </li>
+        </ul>
+      </div>
+
+      <!-- copyright  -->
+      <div class="footer__copyright">
+        © 2021 The Glass Huts
+      </div>
+    </footer>
   </body>
 </html>

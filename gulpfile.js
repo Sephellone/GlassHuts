@@ -10,6 +10,7 @@ import squoosh from 'gulp-libsquoosh';
 import del from 'del';
 import svgo from 'gulp-svgmin';
 import svgstore from 'gulp-svgstore';
+import terser from 'gulp-terser';
 
 
 // Styles
@@ -34,12 +35,19 @@ export const styles = () => {
 //   .pipe(gulp.dest('build'));
 // }
 
-// // Scripts
-// const scripts = () => {
-//   return gulp.src('source/js/*.js')
-//   .pipe(terser())
-//   .pipe(gulp.dest('build/js'))
-// }
+// HTML temp without minification
+
+const html = () => {
+  return gulp.src('source/*.html')
+  .pipe(gulp.dest('build'))
+}
+
+// Scripts
+const scripts = () => {
+  return gulp.src('source/js/*.js')
+  .pipe(terser())
+  .pipe(gulp.dest('build/js'))
+}
 
 // Images
 const optimizeImages = () => {
@@ -83,7 +91,6 @@ export const sprite = () => {
 
 export const copy = (done) => {
   gulp.src([
-    'source/*.html',
     'source/js/**/*.js',
     'source/fonts/*.{woff2,woff}',
     'source/*.ico',
@@ -139,6 +146,8 @@ export const build = gulp.series(
   optimizeImages,
   gulp.parallel(
     styles,
+    html,
+    scripts,
     svg,
     sprite,
   ),
@@ -153,6 +162,8 @@ export default gulp.series(
   copyImages,
   gulp.parallel(
     styles,
+    html,
+    scripts,
     svg,
     sprite,
   ),
