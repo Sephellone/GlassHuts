@@ -1,0 +1,356 @@
+<html class="page" lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="favicon.ico">
+    <link rel="manifest" href="manifest.webmanifest">
+    <link rel="stylesheet" href="css/style.min.css">
+    <title>Book the Hut</title>
+  </head>
+  <body class="page__body">
+    <header class="page__header main-header">
+      <a class="main-header__logo-link" href="#">
+        <img class="main-header__logo" src="img/logo.svg" alt="The Glass Huts logo" width="70" height="65">
+      </a>
+      <div class="main-header__nav-wrapper">
+        <nav class="main-header__nav main-nav">
+          <ul class="main-nav__list">
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="index.html">Home</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="hut.html">the hut</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="area.html">The area</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="booking.html">booking</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="about.html">about us</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="faq.html">faq</a>
+            </li>
+          </ul>
+        </nav>
+        <select class="main-header__language" name="language" id="language">
+          <option value="en">English</option>
+          <option value="de">German</option>
+          <option value="dk" selected>Danish</option>
+        </select>
+        <a class="main-header__booking-link" href="#">Book Now</a>
+        <button class="main-header__menu-toggler">
+          <span class="visually-hidden">Menu</span>
+        </button>
+    </div>
+    </header>
+
+    <main class="page__main page__booking booking">
+      <div class="booking__header">
+        <h1 class="booking__title">Booking</h1>
+        <p class="booking__subtitle">Vesterborg, Denmark</p>
+      </div>
+
+      <!-- booking form -->
+      <form class="booking__form" action="https://httpbin.org/post" method="post">
+        <!-- left column with additional services and rules  -->
+        <div class="booking__wrapper">
+          <div class="booking__services">
+            <h2 class="booking__services-title">Choose Additional Services</h2>
+            <ul class="booking__service-list">
+              <li class="booking__service-item service-card">
+                <div class="service-card__header">
+                  <label class="service-card__label checkbox-control">
+                    <input class="checkbox-control__input visually-hidden" type="checkbox" name="breakfast-one">
+                    <span class="checkbox-control__mark"></span>
+                    <span class="checkbox-control__name">Fresh Breakfast for one </span>
+                    <span class="checkbox-control__price">
+                      <span class="checkbox-control__amount">400</span>
+                      kr</span>
+                  </label>
+                  <button class="service-card__toggler" type="button">
+                    <span class="visually-hidden">More info</span>
+                  </button>
+                </div>
+                <div class="service-card__description">
+                  <h3 class="service-card__title">Fresh Breakfast</h3>
+                  <p class="sercice-card__text">Bread, Coffee, milk, juice, and a selection of spreads + toppings.</p>
+                </div>
+              </li>
+
+              <li class="booking__service-item service-card">
+                <div class="service-card__header">
+                  <label class="service-card__label checkbox-control">
+                    <input class="checkbox-control__input visually-hidden" type="checkbox" name="breakfast-two">
+                    <span class="checkbox-control__mark"></span>
+                    <span class="checkbox-control__name">Fresh Breakfast for two </span>
+                    <span class="checkbox-control__price">
+                      <span class="checkbox-control__amount">500</span>
+                      kr</span>
+                  </label>
+                  <button class="service-card__toggler" type="button">
+                    <span class="visually-hidden">More info</span>
+                  </button>
+                </div>
+                <div class="service-card__description">
+                  <h3 class="service-card__title">Fresh Breakfast</h3>
+                  <p class="sercice-card__text">Bread, Coffee, milk, juice, and a selection of spreads + toppings.</p>
+                </div>
+              </li>
+
+              <li class="booking__service-item service-card">
+                <div class="service-card__header">
+                  <label class="service-card__label checkbox-control">
+                    <input class="checkbox-control__input visually-hidden" type="checkbox" name="dinner-one">
+                    <span class="checkbox-control__mark"></span>
+                    <span class="checkbox-control__name">Classic Dinner for one</span>
+                    <span class="checkbox-control__price">
+                      <span class="checkbox-control__amount">600</span>
+                      kr</span>
+                  </label>
+                  <button class="service-card__toggler" type="button">
+                    <span class="visually-hidden">More info</span>
+                  </button>
+                </div>
+                <div class="service-card__description">
+                  <h3 class="service-card__title">Classic Dinner</h3>
+                  <p class="sercice-card__text">Appetizer, first course and a second course with a side dish.</p>
+                </div>
+              </li>
+
+              <li class="booking__service-item service-card">
+                <div class="service-card__header">
+                  <label class="service-card__label checkbox-control">
+                    <input class="checkbox-control__input visually-hidden" type="checkbox" name="dinner-two">
+                    <span class="checkbox-control__mark"></span>
+                    <span class="checkbox-control__name">Classic Dinner for two </span>
+                    <span class="checkbox-control__price">
+                      <span class="checkbox-control__amount">800</span>
+                      kr</span>
+                  </label>
+                  <button class="service-card__toggler" type="button">
+                    <span class="visually-hidden">More info</span>
+                  </button>
+                </div>
+                <div class="service-card__description">
+                  <h3 class="service-card__title">Classic Dinner</h3>
+                  <p class="sercice-card__text">Appetizer, first course and a second course with a side dish.</p>
+                </div>
+              </li>
+
+              <li class="booking__service-item service-card">
+                <div class="service-card__header">
+                  <label class="service-card__label checkbox-control">
+                    <input class="checkbox-control__input visually-hidden" type="checkbox" name="charger">
+                    <span class="checkbox-control__mark"></span>
+                    <span class="checkbox-control__name">Electric Car Charge</span>
+                    <span class="checkbox-control__price">
+                      <span class="checkbox-control__amount">800</span>
+                      kr</span>
+                  </label>
+                  <button class="service-card__toggler" type="button">
+                    <span class="visually-hidden">More info</span>
+                  </button>
+                </div>
+                <div class="service-card__description">
+                  <h3 class="service-card__title">Electric Car Charge</h3>
+                  <p class="sercice-card__text">If you drive an electric car we are happy to provide you a charging station not far from the cabin.</p>
+                </div>
+              </li>
+            </ul>
+          </div>
+
+          <!-- rules section  -->
+          <div class="booking__info">
+            <h2 class="booking__info-title">Hut rules</h2>
+            <p class="booking__info-text">
+              <ul class="booking__info-list">
+                <li class="booking__info-item">Check-in:  2:00 PM - 11:00 PM</li>
+                <li class="booking__info-item">Checkout: 11:00 AM</li>
+                <li class="booking__info-item">Not suitable for children and infants</li>
+                <li class="booking__info-item">No smoking</li>
+                <li class="booking__info-item">No pets</li>
+              </ul>
+            </p>
+          </div>
+
+          <div class="booking__info">
+            <h2 class="booking__info-title">Cancellation policy</h2>
+            <p class="booking__info-text">
+              Free cancellation until 1:00 PM on <span id="free-cancellation-date">Mar 27</span>
+              <br> After that, cancel before 2:00 PM on <span id="charged-cancellation-date">Apr 1</span> and get a 50% refund, minus the first night and service fee.
+            </p>
+          </div>
+
+          <div class="booking__info">
+            <h2 class="booking__info-title">Important Information</h2>
+            <p class="booking__info-text">
+              You need to hike a steep hill to arrive at the treehouses, it takes approx 20-30 minutes on a trail with stairs and uneven ground.
+            </p>
+          </div>
+
+          <a class="booking__faq-link" href="faq.html">read FAQ</a>
+        </div>
+
+
+        <!-- right column with order details, sum and button  -->
+        <div class="booking__total total">
+          <p class="total__price">
+            <span class="total__price-amount">3.200kr</span> / night
+          </p>
+          <div class="total__inputs">
+            <div class="total__input-wrapper">
+              <label class="total__input-label" for="checkin">
+                <span class="total__input-label-text">Check in</span>
+              </label>
+              <input class="total__input" id="checkin" type="date" name="checkin" placeholder="04/29/2023">
+            </div>
+
+            <div class="total__input-wrapper">
+              <label class="total__input-label" for="checkout">
+                <span class="total__input-label-text">Check out</span>
+              </label>
+              <input class="total__input" id="checkout" type="date" name="checkout" placeholder="04/30/2023">
+            </div>
+
+            <div class="total__input-wrapper">
+              <label class="total__input-label" for="guests">
+                <span class="total__input-label-text">Guests</span>
+              </label>
+              <button class="total__guests total__guests--less" type="button">
+                <span class="visually-hidden">Remove guest</span>
+              </button>
+              <input class="total__input total__input--number" id="guests" type="number" name="guests" placeholder="1" min="1" value="1">
+              <button class="total__guests total__guests--more" type="button">
+                <span class="visually-hidden">Add guest</span>
+              </button>
+            </div>
+          </div>
+          <button class="total__submit-button" type="submit">Book</button>
+
+          <ul class="total__details">
+
+            <li class="total__element">
+              <p class="total__name">
+                3.200kr x <span id="nights">2</span> nights
+              </p>
+              <p class="total__sum">
+                <span class="total__sum-number">6.400</span> kr
+              </p>
+            </li>
+
+            <li class="total__element">
+              <p class="total__name">
+                Classic Dinner for one
+              </p>
+              <p class="total__sum">
+                <span class="total__sum-number">600</span> kr
+              </p>
+            </li>
+
+            <li class="total__element">
+              <p class="total__name">
+                Electric Car Charge
+              </p>
+              <p class="total__sum">
+                <span class="total__sum-number">800</span> kr
+              </p>
+            </li>
+
+            <li class="total__element total__element--discount">
+              <p class="total__name">
+                10% discount
+              </p>
+              <p class="total__sum">
+                <span class="total__sum-number">-200</span> kr
+              </p>
+            </li>
+          </ul>
+
+          <p class="total__final">
+            <p class="total__final-name">Total</p>
+            <p class="total__final-amount">
+              <span id="final-amount">7000</span>
+              kr
+            </p>
+          </p>
+
+          <label class="visually-hidden" for="coupon">Input a coupon code</label>
+          <input class="total__coupon-input" id="coupon" type="text" name="coupon" placeholder="Coupon Code">
+          <button class="total__coupon-button" type="button">apply</button>
+
+        </div>
+
+      </form>
+    </main>
+
+    <!-- footer  -->
+    <footer class="page__footer footer">
+      <!-- subscription section -->
+      <div class="footer__subscription">
+        <h2 class="visually-hidden">Subscribe to our Newsletter</h2>
+        <label class="footer__subscription-label" for="subscription">
+          Newsletter
+        </label>
+        <input class="footer__subscription-input" type="email" placeholder="Email Adrdess" id="subscription">
+        <button type="button">
+          <span class="visually-hidden">Subscribe</span>
+        </button>
+        <p class="footer__text">
+          Sign up to our newsletter for special things and receive 10% off your next order.
+        </p>
+      </div>
+
+
+      <!-- links section  -->
+      <div class="footer__links">
+        <!-- Official docs links -->
+        <ul class="footer__links-list">
+          <li class="footer__links-item">
+            <a class="footer__link"  href="#">TERMS AND CONDITIONS</a>
+          </li>
+          <li class="footer__links-item">
+            <a class="footer__link"  href="#">CENCELLATION POLICY</a>
+          </li>
+          <li class="footer__links-item">
+            <a class="footer__link"  href="#">PRIVACY POLICY</a>
+          </li>
+        </ul>
+        <!-- payment methods list -->
+        <ul class="footer__payment-list">
+          <li class="footer__payment-item">
+            <svg class="footer__payment-icon" width="51" height="51">
+              <use href="img/sprite.svg#paypal"></use>
+            </svg>
+            <span class="visually-hidden">Paypal</span>
+          </li>
+          <li class="footer__payment-item">
+            <svg class="footer__payment-icon" width="49" height="49">
+              <use href="img/sprite.svg#mastercard"></use>
+            </svg>
+            <span class="visually-hidden">MasterCard</span>
+          </li>
+          <li class="footer__payment-item">
+            <svg class="footer__payment-icon" width="48" height="48">
+              <use href="img/sprite.svg#visa"></use>
+            </svg>
+            <span class="visually-hidden">Visa</span>
+          </li>
+          <li class="footer__payment-item">
+            <svg class="footer__payment-icon" width="32" height="32">
+              <use href="img/sprite.svg#bank-transfer"></use>
+            </svg>
+            <span class="visually-hidden">Bank Transfer</span>
+          </li>
+        </ul>
+      </div>
+
+      <!-- copyright  -->
+      <div class="footer__copyright">
+        © 2021 The Glass Huts
+      </div>
+    </footer>
+  </body>
+</html>

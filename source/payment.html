@@ -1,0 +1,325 @@
+<html class="page" lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="favicon.ico">
+    <link rel="manifest" href="manifest.webmanifest">
+    <link rel="stylesheet" href="css/style.min.css">
+    <title>Payment</title>
+  </head>
+  <body class="page__body">
+    <header class="page__header main-header">
+      <a class="main-header__logo-link" href="#">
+        <img class="main-header__logo" src="img/logo.svg" alt="The Glass Huts logo" width="70" height="65">
+      </a>
+      <div class="main-header__nav-wrapper">
+        <nav class="main-header__nav main-nav">
+          <ul class="main-nav__list">
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="index.html">Home</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="hut.html">the hut</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="area.html">The area</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="booking.html">booking</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="about.html">about us</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="faq.html">faq</a>
+            </li>
+          </ul>
+        </nav>
+        <select class="main-header__language" name="language" id="language">
+          <option value="en">English</option>
+          <option value="de">German</option>
+          <option value="dk" selected>Danish</option>
+        </select>
+        <a class="main-header__booking-link" href="#">Book Now</a>
+        <button class="main-header__menu-toggler">
+          <span class="visually-hidden">Menu</span>
+        </button>
+    </div>
+    </header>
+
+    <main class="page__main page__payment payment">
+      <h1 class="visually-hidden">Fill in the information to complete the order</h1>
+      <!-- form with personal details  -->
+      <form class="payment__form" action="https://httpbin.org/post" method="post">
+        <!-- left column with personal data  -->
+        <div class="payment__wrapper">
+          <a class="payment__go-back" href="booking.html">Confirm & Pay</a>
+          <fieldset class="payment__section payment__section--personal">
+            <legend class="payment__legend">Personal Information</legend>
+            <div class="payment__section-wrapper payment__section-wrapper--personal">
+              <div class="payment__input-wrapper">
+                <label class="payment__label" for="first-name">First Name</label>
+                <input class="payment__input" type="text" id="first-name" name="first-name" required>
+              </div>
+              <div class="payment__input-wrapper">
+                <label class="payment__label" for="last-name">Last Name</label>
+                <input class="payment__input" type="text" id="last-name" name="last-name" required>
+              </div>
+              <div class="payment__input-wrapper">
+                <label class="payment__label" for="email">Email</label>
+                <input class="payment__input" type="email" id="email" name="email" required>
+              </div>
+              <div class="payment__input-wrapper">
+                <label class="payment__label" for="phone">Phone number</label>
+                <input class="payment__input" type="tel" id="phone" name="phone" required>
+              </div>
+              <div class="payment__input-wrapper">
+                <label class="payment__label" for="address">Address</label>
+                <input class="payment__input" type="text" id="address" name="address" required>
+              </div>
+              <div class="payment__input-wrapper">
+                <label class="payment__label" for="zip">Postal code</label>
+                <input class="payment__input" type="text" id="zip" name="zip" required>
+              </div>
+              <div class="payment__input-wrapper">
+                <label class="payment__label" for="city">City</label>
+                <input class="payment__input" type="text" id="city" name="city">
+              </div>
+              <div class="payment__input-wrapper">
+                <label class="payment__label" for="country">Country</label>
+                <select class="payment__country" name="country" id="country">
+                  <option value="uk">United Kingdom</option>
+                  <option value="de">Germany</option>
+                  <option value="ru">Russia</option>
+                  <option value="dk">Denmark</option>
+                  <option value="us">United States</option>
+                  <option value="ua">Ukraine</option>
+                </select>
+              </div>
+            </div>
+          </fieldset>
+
+          <fieldset class="payment__section payment__section--pay">
+            <legend class="payment__legend">Pay with</legend>
+            <div class="payment__systems">
+              <svg class="footer__payment-icon" width="35" height="35">
+                <use href="img/sprite.svg#paypal"></use>
+              </svg>
+              <svg class="footer__payment-icon" width="35" height="35">
+                <use href="img/sprite.svg#mastercard"></use>
+              </svg>
+              <svg class="footer__payment-icon" width="35" height="35">
+                <use href="img/sprite.svg#visa"></use>
+              </svg>
+              <svg class="footer__payment-icon" width="30" height="30">
+                <use href="img/sprite.svg#bank-transfer"></use>
+              </svg>
+            </div>
+            <div class="payment__section-wrapper payment__section-wrapper--pay">
+              <div class="payment__input-wrapper">
+                <label class="payment__label" for="card">Credit or debit card</label>
+                <input class="payment__input payment__input--card" type="text" id="card" name="card" required autocomplete="off">
+              </div>
+              <div class="payment__input-wrapper">
+                <label class="payment__label" for="expiration">Expiration</label>
+                <input class="payment__input payment__input" type="text" id="expiration" name="expiration" required autocomplete="off">
+              </div>
+              <div class="payment__input-wrapper">
+                <label class="payment__label" for="ccv">CCV</label>
+                <input class="payment__input payment__input" type="password" id="cvv" name="cvv" required autocomplete="off">
+              </div>
+              <div class="payment__input-wrapper payment__input-wrapper--pay-zip">
+                <label class="payment__label" for="pay-zip">ZIP code</label>
+                <input class="payment__input payment__input" type="text" id="pay-zip" name="pay-zip">
+              </div>
+              <div class="payment__input-wrapper">
+                <label class="payment__label" for="pay-country">Country</label>
+                <select class="payment__country" name="pay-country" id="pay-country">
+                  <option value="uk">United Kingdom</option>
+                  <option value="de">Germany</option>
+                  <option value="ru">Russia</option>
+                  <option value="dk">Denmark</option>
+                  <option value="us">United States</option>
+                  <option value="ua">Ukraine</option>
+                </select>
+              </div>
+            </div>
+          </fieldset>
+
+          <fieldset class="payment__section payment__section--additional">
+            <legend class="payment__legend payment__legend--additional">Additional Information</legend>
+            <label class="payment__label" for="add-info">Leave a message</label>
+            <textarea class="payment__textarea" name="additional" id="add-info"></textarea>
+          </fieldset>
+
+          <label class="payment__terms checkbox-control">
+            <input class="checkbox-control__input visually-hidden" type="checkbox" name="terms" required>
+            <span class="checkbox-control__mark"></span>
+            <span class="checkbox-control__name">
+              I have read and accept
+              <a class="payment__terms-link" href="#">Terms & Conditions</a>
+            </span>
+          </label>
+
+          <button class="payment__submit" type="submit">confirm and pay</button>
+
+
+        </div>
+        <!-- right column with order total -->
+        <div class="payment__total total">
+          <div class="total__header">
+            <h2 class="total__title">The Glass Hut</h2>
+            <p class="total__location">Vesterborg, Denmark</p>
+          </div>
+          <div class="total__inputs">
+            <div class="total__input-wrapper">
+              <label class="total__input-label" for="checkin">
+                <span class="total__input-label-text">Check in</span>
+              </label>
+              <input class="total__input" id="checkin" type="date" name="checkin" readonly value="2023-04-29">
+            </div>
+
+            <div class="total__input-wrapper">
+              <label class="total__input-label" for="checkout">
+                <span class="total__input-label-text">Check out</span>
+              </label>
+              <input class="total__input" id="checkout" type="date" name="checkout" readonly value="2023-04-30">
+            </div>
+
+            <div class="total__input-wrapper">
+              <label class="total__input-label" for="guests">
+                <span class="total__input-label-text">Guests</span>
+              </label>
+              <button class="total__guests total__guests--less total__guests--disabled" type="button">
+                <span class="visually-hidden">Remove guest</span>
+              </button>
+              <input class="total__input total__input--number" id="guests" type="number" name="guests" placeholder="1" min="1" value="1" readonly>
+              <button class="total__guests total__guests--more total__guests--disabled" type="button">
+                <span class="visually-hidden">Add guest</span>
+              </button>
+            </div>
+          </div>
+
+          <ul class="total__details">
+
+            <li class="total__element">
+              <p class="total__name">
+                3.200kr x <span id="nights">2</span> nights
+              </p>
+              <input type="number" name="nights" value="2" hidden>
+              <p class="total__sum">
+                <span class="total__sum-number">6.400</span> kr
+              </p>
+            </li>
+
+            <li class="total__element">
+              <p class="total__name">
+                Classic Dinner for one
+              </p>
+              <input type="text" name="option1" value="Classic Dinner for one" hidden>
+              <p class="total__sum">
+                <span class="total__sum-number">600</span> kr
+              </p>
+            </li>
+
+            <li class="total__element">
+              <p class="total__name">
+                Electric Car Charge
+              </p>
+              <input type="text" name="option2" value="Electric Car charge" hidden>
+              <p class="total__sum">
+                <span class="total__sum-number">800</span> kr
+              </p>
+            </li>
+
+            <li class="total__element total__element--discount">
+              <p class="total__name">
+                10% discount
+              </p>
+              <p class="total__sum">
+                <span class="total__sum-number">-200</span> kr
+              </p>
+            </li>
+          </ul>
+
+          <p class="total__final">
+            <p class="total__final-name">Total</p>
+            <p class="total__final-amount">
+              <span id="final-amount">7000</span>
+              kr
+            </p>
+            <input type="number" name="total-amount" value="7000" hidden>
+          </p>
+        </div>
+      </form>
+
+    </main>
+
+    <!-- footer  -->
+    <footer class="page__footer footer">
+      <!-- subscription section -->
+      <div class="footer__subscription">
+        <h2 class="visually-hidden">Subscribe to our Newsletter</h2>
+        <label class="footer__subscription-label" for="subscription">
+          Newsletter
+        </label>
+        <input class="footer__subscription-input" type="email" placeholder="Email Adrdess" id="subscription">
+        <button type="button">
+          <span class="visually-hidden">Subscribe</span>
+        </button>
+        <p class="footer__text">
+          Sign up to our newsletter for special things and receive 10% off your next order.
+        </p>
+      </div>
+
+
+      <!-- links section  -->
+      <div class="footer__links">
+        <!-- Official docs links -->
+        <ul class="footer__links-list">
+          <li class="footer__links-item">
+            <a class="footer__link"  href="#">TERMS AND CONDITIONS</a>
+          </li>
+          <li class="footer__links-item">
+            <a class="footer__link"  href="#">CENCELLATION POLICY</a>
+          </li>
+          <li class="footer__links-item">
+            <a class="footer__link"  href="#">PRIVACY POLICY</a>
+          </li>
+        </ul>
+        <!-- payment methods list -->
+        <ul class="footer__payment-list">
+          <li class="footer__payment-item">
+            <svg class="footer__payment-icon" width="51" height="51">
+              <use href="img/sprite.svg#paypal"></use>
+            </svg>
+            <span class="visually-hidden">Paypal</span>
+          </li>
+          <li class="footer__payment-item">
+            <svg class="footer__payment-icon" width="49" height="49">
+              <use href="img/sprite.svg#mastercard"></use>
+            </svg>
+            <span class="visually-hidden">MasterCard</span>
+          </li>
+          <li class="footer__payment-item">
+            <svg class="footer__payment-icon" width="48" height="48">
+              <use href="img/sprite.svg#visa"></use>
+            </svg>
+            <span class="visually-hidden">Visa</span>
+          </li>
+          <li class="footer__payment-item">
+            <svg class="footer__payment-icon" width="32" height="32">
+              <use href="img/sprite.svg#bank-transfer"></use>
+            </svg>
+            <span class="visually-hidden">Bank Transfer</span>
+          </li>
+        </ul>
+      </div>
+
+      <!-- copyright  -->
+      <div class="footer__copyright">
+        © 2021 The Glass Huts
+      </div>
+    </footer>
+  </body>
+</html>
