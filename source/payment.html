@@ -1,4 +1,5 @@
-<html class="page" lang="ru">
+<!DOCTYPE html>
+<html class="page" lang="en">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -126,7 +127,7 @@
               </div>
               <div class="payment__input-wrapper">
                 <label class="payment__label" for="ccv">CCV</label>
-                <input class="payment__input payment__input" type="password" id="cvv" name="cvv" required autocomplete="off">
+                <input class="payment__input payment__input" type="password" id="ccv" name="ccv" required autocomplete="off">
               </div>
               <div class="payment__input-wrapper payment__input-wrapper--pay-zip">
                 <label class="payment__label" for="pay-zip">ZIP code</label>
@@ -242,14 +243,14 @@
             </li>
           </ul>
 
-          <p class="total__final">
+          <div class="total__final">
             <p class="total__final-name">Total</p>
             <p class="total__final-amount">
               <span id="final-amount">7000</span>
               kr
             </p>
             <input type="number" name="total-amount" value="7000" hidden>
-          </p>
+          </div>
         </div>
       </form>
 

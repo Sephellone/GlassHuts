@@ -1,4 +1,5 @@
-<html class="page" lang="ru">
+<!DOCTYPE html>
+<html class="page" lang="en">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -9,7 +10,7 @@
   </head>
   <body class="page__body">
     <header class="page__header main-header">
-      <a class="main-header__logo-link" href="#">
+      <a class="main-header__logo-link" href="index.html">
         <img class="main-header__logo" src="img/logo.svg" alt="The Glass Huts logo" width="70" height="65">
       </a>
       <div class="main-header__nav-wrapper">
@@ -165,7 +166,7 @@
           <!-- rules section  -->
           <div class="booking__info">
             <h2 class="booking__info-title">Hut rules</h2>
-            <p class="booking__info-text">
+            <div class="booking__info-text">
               <ul class="booking__info-list">
                 <li class="booking__info-item">Check-in:  2:00 PM - 11:00 PM</li>
                 <li class="booking__info-item">Checkout: 11:00 AM</li>
@@ -173,7 +174,7 @@
                 <li class="booking__info-item">No smoking</li>
                 <li class="booking__info-item">No pets</li>
               </ul>
-            </p>
+            </div>
           </div>
 
           <div class="booking__info">
@@ -205,14 +206,14 @@
               <label class="total__input-label" for="checkin">
                 <span class="total__input-label-text">Check in</span>
               </label>
-              <input class="total__input" id="checkin" type="date" name="checkin" placeholder="04/29/2023">
+              <input class="total__input" id="checkin" type="date" name="checkin">
             </div>
 
             <div class="total__input-wrapper">
               <label class="total__input-label" for="checkout">
                 <span class="total__input-label-text">Check out</span>
               </label>
-              <input class="total__input" id="checkout" type="date" name="checkout" placeholder="04/30/2023">
+              <input class="total__input" id="checkout" type="date" name="checkout">
             </div>
 
             <div class="total__input-wrapper">
@@ -269,13 +270,13 @@
             </li>
           </ul>
 
-          <p class="total__final">
+          <div class="total__final">
             <p class="total__final-name">Total</p>
             <p class="total__final-amount">
               <span id="final-amount">7000</span>
               kr
             </p>
-          </p>
+          </div>
 
           <label class="visually-hidden" for="coupon">Input a coupon code</label>
           <input class="total__coupon-input" id="coupon" type="text" name="coupon" placeholder="Coupon Code">
