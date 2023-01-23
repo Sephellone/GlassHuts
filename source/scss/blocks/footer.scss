@@ -103,7 +103,7 @@
 .footer__links-list {
   display: flex;
   flex-wrap: wrap;
-  justify-content: end;
+  justify-content: flex-end;
   margin: 0;
   margin-bottom: 50px;
   padding: 0;
@@ -140,7 +140,7 @@
 .footer__payment-list {
   display: flex;
   flex-wrap: wrap;
-  justify-content: end;
+  justify-content: flex-end;
   margin: 0;
   margin-left: auto;
   padding: 0;
@@ -168,7 +168,7 @@
   }
 
   .footer__links-list{
-    justify-content: start;
+    justify-content: flex-start;
     margin-bottom: 20px;
   }
 
@@ -178,7 +178,7 @@
   }
 
   .footer__payment-list {
-    justify-content: start;
+    justify-content: flex-start;
   }
 
   .footer__payment-item {

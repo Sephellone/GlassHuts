@@ -1,0 +1,59 @@
+@import "variables.scss";
+
+.book-button {
+  display: flex;
+}
+
+.book-button-link {
+  width: 18.8vw;
+  padding: calc(8px + 2vw);
+  flex-shrink: 0;
+}
+
+.book-button__description {
+  padding: calc(1.2vw) calc(2vw);
+  background-color: $light-bg-gray;
+  font-family: $Clear-sans;
+  font-weight: 400;
+}
+
+.book-button__from,
+.book-button__per-element {
+  padding: 0;
+  margin: 0;
+  font-size: calc(6px + 0.6vw);
+  line-height: 18px;
+}
+
+.book-button__per-element {
+  text-align: right;
+}
+
+.book-button__price {
+  padding: 0;
+  margin: 0;
+  font-weight: 700;
+  font-size: calc(6px + 1vw);
+  line-height: 140%;
+  text-align: center;
+
+  &::first-letter {
+    font-weight: 400;
+  }
+}
+
+@media (max-width: $mobile-width) {
+  .book-button{
+    width: 100%;
+  }
+
+  .book-button-link {
+    width: auto;
+    flex-grow: 1;
+  }
+
+  .book-button__description {
+    width: 120px;
+  }
+
+}

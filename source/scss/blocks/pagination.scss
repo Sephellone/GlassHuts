@@ -1,0 +1,43 @@
+@import "variables.scss";
+
+.pagination {
+  display: flex;
+  align-items: center;
+
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 19px;
+
+  &--index {
+    color: $white;
+  }
+}
+
+.pagination__min {
+  margin-right: 8px;
+}
+
+
+.pagination__track {
+  position: relative;
+  width: 88px;
+  height: 2px;
+  margin-right: 8px;
+
+  &--index{
+    background-color: rgba(255, 255, 255, 0.28);
+    }
+}
+
+.pagination__slider {
+  position: absolute;
+  width: 16.7%;
+  height: 100%;
+  top: 0;
+  left: 0;
+
+  &--index{
+    background-color: $white;
+    }
+
+}
