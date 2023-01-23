@@ -13,7 +13,7 @@
       <a class="main-header__logo-link" href="index.html">
         <img class="main-header__logo" src="img/logo.svg" alt="The Glass Huts logo" width="70" height="65">
       </a>
-      <div class="main-header__nav-wrapper">
+      <div class="main-header__nav-wrapper main-header__nav-wrapper--closed">
         <nav class="main-header__nav main-nav">
           <ul class="main-nav__list">
             <li class="main-nav__item">
@@ -41,11 +41,13 @@
           <option value="de">German</option>
           <option value="dk" selected>Danish</option>
         </select>
-        <a class="main-header__booking-link" href="#">Book Now</a>
-        <button class="main-header__menu-toggler">
-          <span class="visually-hidden">Menu</span>
-        </button>
-    </div>
+      </div>
+      <a class="main-header__booking-link button" href="#">Book Now</a>
+
+      <button class="main-header__menu-toggler main-header__menu-toggler--burger">
+        <span class="visually-hidden">Menu</span>
+      </button>
+
     </header>
 
     <main class="page__main features features--area">
@@ -314,17 +316,35 @@
     <footer class="page__footer footer">
       <!-- subscription section -->
       <div class="footer__subscription">
-        <h2 class="visually-hidden">Subscribe to our Newsletter</h2>
-        <label class="footer__subscription-label" for="subscription">
-          Newsletter
-        </label>
-        <input class="footer__subscription-input" type="email" placeholder="Email Adrdess" id="subscription">
-        <button type="button">
-          <span class="visually-hidden">Subscribe</span>
-        </button>
-        <p class="footer__text">
-          Sign up to our newsletter for special things and receive 10% off your next order.
-        </p>
+        <form
+          class="footer__form"
+          action="https://httpbin.org/post"
+          method="post"
+        >
+          <h2 class="visually-hidden">Subscribe to our Newsletter</h2>
+          <label class="footer__subscription-label" for="subscription">
+            Newsletter
+          </label>
+          <div class="footer__input-wrapper">
+            <input
+              class="footer__subscription-input"
+              type="email"
+              placeholder="Email Adrdess"
+              id="subscription"
+              name="subscription-mail"
+              required
+            >
+            <button class="footer__subscription-button" type="submit">
+              <svg class="footer__subscription-arrow" width="34" height="17">
+                <use href="img/sprite.svg#arrow"></use>
+              </svg>
+              <span class="visually-hidden">Subscribe</span>
+            </button>
+          </div>
+          <p class="footer__text">
+            Sign up to our newsletter for special things and receive 10% off your next order.
+          </p>
+        </form>
       </div>
 
       <!-- links section  -->

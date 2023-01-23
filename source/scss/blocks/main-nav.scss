@@ -1,0 +1,53 @@
+@import "variables.scss";
+
+.main-nav {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.main-nav__list {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-evenly;
+  list-style-type: none;
+}
+
+.main-nav__item {
+  margin: 0;
+  margin-right: 15px;
+  padding: 10px;
+}
+
+.main-nav__link {
+  margin: 0;
+  padding: 10px 0;
+
+  font-family: $Clear-sans;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  color: $black;
+  text-transform: uppercase;
+  text-decoration: none;
+  text-align: center;
+
+  &:hover,
+  &:active {
+    text-decoration: underline;
+  }
+
+  &:active {
+    opacity: 0.4;
+  }
+}
+
+
+@media (max-width: $mobile-width) {
+  .main-nav__list {
+    flex-direction: column;
+  }
+}

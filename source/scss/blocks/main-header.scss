@@ -1,0 +1,166 @@
+@import "variables.scss";
+
+.main-header {
+  position: relative;
+  box-sizing: border-box;
+  width: 100%;
+  max-width: 1408px;
+  margin: 0 auto;
+  padding: 20px 32px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.main-header__logo-link {
+  margin-left: calc(30px + 6vw);
+  margin-right: 10px;
+
+  &:hover .main-header__logo{
+    filter: drop-shadow(0 2px 2px $dark-bg-gray);
+  }
+
+  &:active .main-header__logo{
+    filter: drop-shadow(0 2px 2px $dark-bg-gray);
+    opacity: 0.7;
+  }
+}
+
+.main-header__logo {
+  display: block;
+  flex-shrink: 0;
+  margin: 0;
+  padding: 0;
+  width: 70px;
+  height: auto;
+}
+
+.main-header__nav-wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.main-header__language {
+  margin: 0;
+  padding: 16px 0;
+
+  background: transparent;
+  border: none;
+  font-family: $Clear-sans;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 28px;
+  color: $black;
+  text-transform: uppercase;
+  text-align: center;
+
+  &:hover {
+    opacity: 0.7;
+    cursor: pointer;
+  }
+}
+
+.main-header__booking-link {
+  margin: 0;
+  margin-left: 10px;
+  width: 200px;
+  min-height: 60px;
+  flex-shrink: 1;
+
+}
+
+.main-header__menu-toggler {
+  display: none;
+}
+
+
+@media (max-width: $mobile-width) {
+  .main-header {
+    padding: 10px;
+  }
+  .main-header__logo-link {
+    margin-left: 0;
+  }
+  .main-header__logo {
+    width: 60px;
+  }
+
+  .main-header__nav-wrapper {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    padding-left: 25px;
+    background-color: rgba(255, 255, 255, 0.8);
+
+    &--closed {
+      display: none;
+    }
+
+    &--opened {
+      display: block;
+    }
+  }
+
+  .main-header__booking-link {
+    width: 150px;
+    min-height: 40px;
+  }
+
+  .main-header__menu-toggler {
+    position: relative;
+    display: block;
+    width: 40px;
+    height: 40px;
+    border: none;
+    background: transparent;
+    cursor: pointer;
+
+    &--burger::before {
+      position: absolute;
+      top: 50%;
+      left: 0;
+      content: "";
+      width: 100%;
+      height: 2px;
+      background-color: $dark-bg-gray;
+
+      box-shadow: 0 10px 0 0 $dark-bg-gray,
+         0 -10px 0 0 $dark-bg-gray;
+
+      transform: translateY(50%);
+    }
+
+    &--cross::before,
+    &--cross::after {
+      content: "";
+      position: absolute;
+      top: 50%;
+      left: 0;
+      width: 100%;
+      height: 2px;
+      display: block;
+      background-color: $dark-bg-gray;
+    }
+
+    &--cross::before {
+      transform: rotate(45deg);
+    }
+
+    &--cross::after {
+      transform: rotate(-45deg);
+    }
+
+    &:hover {
+      opacity: 0.7;
+    }
+
+    &:active {
+      opacity: 0.4;
+    }
+
+  }
+}
