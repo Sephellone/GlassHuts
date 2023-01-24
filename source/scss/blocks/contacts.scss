@@ -1,0 +1,47 @@
+@import "variables.scss";
+
+.contacts {
+  padding: 10.7vw 10vw 9.5vw 10vw;
+  display: flex;
+}
+
+.contacts__wrapper {
+  flex-grow: 1;
+  width: 50%;
+}
+
+.contacts__book {
+  position: relative;
+  flex-grow: 1;
+  width: 50%;
+  align-self: flex-end;
+}
+
+.contacts__book-wrapper {
+  position: relative;
+  width: 70%;
+  margin-left: auto;
+}
+
+.contacts__book-image {
+  display: block;
+  width: 100%;
+  height: auto;
+  margin: 0;
+  padding: 0;
+}
+
+.contacts__book-button {
+  width: 100%;
+}
+
+
+@media (min-width: $desktop-width) {
+  .contacts {
+    padding: 150px 146px 133px 146px;
+  }
+}
+
+@media (max-width: $mobile-width) {
+
+}

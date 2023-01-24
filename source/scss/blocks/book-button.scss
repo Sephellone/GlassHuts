@@ -1,21 +1,30 @@
 @import "variables.scss";
 
 .book-button {
+  position: relative;
   display: flex;
 }
 
 .book-button-link {
-  width: 18.8vw;
+  box-sizing: border-box;
+  width: 70%;
   padding: calc(8px + 2vw);
   flex-shrink: 0;
 }
 
 .book-button__description {
-  padding: calc(1.2vw) calc(2vw);
+  box-sizing: border-box;
+  width: 30%;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   background-color: $light-bg-gray;
   font-family: $Clear-sans;
   font-weight: 400;
+  flex-shrink: 0;
 }
+
 
 .book-button__from,
 .book-button__per-element {
@@ -52,8 +61,8 @@
     flex-grow: 1;
   }
 
-  .book-button__description {
-    width: 120px;
-  }
+  // .book-button__description {
+  //   min-width: 100px;
+  // }
 
 }

@@ -61,6 +61,7 @@
 }
 
 .index-header__book {
+  max-width: 383px;
   margin-left: 10vw;
   transform: translateY(-63%);
 }
@@ -90,6 +91,7 @@
   .index-header__book {
     margin: 0;
     width: 100%;
+    max-width: none;
     transform: translateY(-50%);
   }
 }
