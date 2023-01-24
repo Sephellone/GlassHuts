@@ -2,11 +2,13 @@
 
 .index-header {
   position: relative;
+  height: 50vw;
+  padding-bottom: calc(111px - 1vw);
 }
 
 .index-header__slider {
   height: 100%;
-  overflow: hidden;
+  max-height: 700px;
 }
 
 .index-header__slider-inner {
@@ -19,7 +21,6 @@
     height: 100%;
     background-color: $dark-bg-gray;
     opacity: 0.35;
-
   }
 }
 
@@ -65,7 +66,17 @@
 }
 
 
+@media (min-width: $desktop-width) {
+  .index-header {
+    padding-bottom: 111px;
+  }
+}
+
 @media (max-width: $mobile-width) {
+  .index-header {
+    padding-bottom: 50px;
+  }
+
   .index-header__title {
     margin-bottom: 20px;
     font-size: calc(14px + 3vw);
@@ -79,6 +90,6 @@
   .index-header__book {
     margin: 0;
     width: 100%;
-    transform: translateY(0);
+    transform: translateY(-50%);
   }
 }
