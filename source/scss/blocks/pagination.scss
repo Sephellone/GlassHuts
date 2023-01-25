@@ -4,13 +4,20 @@
   display: flex;
   align-items: center;
 
-  font-weight: 400;
+
   font-size: 17px;
   line-height: 19px;
 
   &--index {
+    font-weight: 400;
     color: $white;
   }
+}
+
+.pagination__min,
+.pagination__max {
+  margin: 0;
+  padding: 0;
 }
 
 .pagination__min {
@@ -23,6 +30,7 @@
   width: 88px;
   height: 2px;
   margin-right: 8px;
+  background-color: $pagination-light-grey;
 
   &--index{
     background-color: rgba(255, 255, 255, 0.28);
@@ -35,6 +43,7 @@
   height: 100%;
   top: 0;
   left: 0;
+  background-color: $text-gray;
 
   &--index{
     background-color: $white;

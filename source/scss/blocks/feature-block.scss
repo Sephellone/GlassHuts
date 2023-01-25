@@ -1,0 +1,69 @@
+@import "variables.scss";
+
+.feature-block {
+  box-sizing: border-box;
+  max-width: $desktop-width;
+  width: 100%;
+  min-height: 39vw;
+  overflow: hidden;
+  padding: 0 10vw;
+  display: grid;
+  grid-template-columns: 1.23fr 1fr;
+  gap: 9.8vw;
+
+  &--reverse {
+    grid-template-columns: 1fr 1.23fr;
+  }
+}
+
+.feature-block__slideshow {
+  box-sizing: border-box;
+  max-height: 547px;
+}
+
+.feature-block__description {
+  padding: 4.7vw 0;
+}
+
+.feature-block__description-title {
+  margin: 0;
+  margin-bottom: calc(8px + 3vw);
+  padding: 0;
+  font-weight: 400;
+  font-size: calc(12px + 2vw);
+  line-height: 100%;
+  color: $dark-bg-gray;
+}
+
+
+@media (min-width: $desktop-width) {
+  .feature-block {
+    min-height: 547px;
+    padding: 0 145px;
+    gap: 138px;
+  }
+
+  .feature-block__description {
+    padding: 67px 0;
+  }
+
+  .feature-block__description-title {
+    margin-bottom: 50px;
+    font-size: 40px;
+  }
+}
+
+@media (max-width: $mobile-width) {
+  .feature-block {
+    box-sizing: border-box;
+    max-width: $mobile-width;
+    width: 100%;
+    // min-height: 39vw;
+    padding: 0 5vw;
+    grid-template-columns: 1fr;
+
+    &--reverse {
+      grid-template-columns: 1fr;
+    }
+  }
+}

@@ -7,6 +7,9 @@
 
 .book-button-link {
   box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 70%;
   padding: calc(8px + 2vw);
   flex-shrink: 0;

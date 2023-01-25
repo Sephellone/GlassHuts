@@ -1,0 +1,27 @@
+@import "variables.scss";
+
+.features__header {
+  margin: 0;
+  margin-bottom: 7vw;
+}
+
+.features__section {
+  margin: 0;
+  margin-bottom: 11vw;
+}
+
+@media (min-width: $desktop-width) {
+  .features__header {
+    margin-bottom: 100px;
+  }
+
+  .features__section {
+    margin-bottom: 154px;
+  }
+}
+
+@media (max-width: $mobile-width) {
+  .features__section {
+    margin-bottom: 4vw;
+  }
+}
