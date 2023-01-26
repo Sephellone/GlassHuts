@@ -12,6 +12,8 @@
 }
 
 .index-header__slider-inner {
+  aspect-ratio: auto;
+
   &::after {
     content: "";
     position: absolute;

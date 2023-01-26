@@ -1,0 +1,129 @@
+@import "variables.scss";
+
+.faq {
+  box-sizing: border-box;
+  max-width: $desktop-width;
+  width: 100%;
+  margin: 0 auto;
+  padding: 7vw 10vw;
+}
+
+.faq__list {
+  box-sizing: border-box;
+  max-width: 774px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.faq__item {
+  margin: 0;
+  margin-bottom: 24px;
+  padding: 13px 24px;
+  transition: all 500ms ease;
+  border: 1px solid;
+  border-color: transparent;
+
+  &--closed {
+    border-color: $dark-bg-gray;
+
+    .faq__description {
+      max-height: 0;
+      padding: 0;
+    }
+  }
+
+  &--open {
+    background-color: $light-bg-gray;
+
+    .faq__item-toggler {
+      visibility: hidden;
+    }
+  }
+}
+
+.faq__item-header {
+  box-sizing: border-box;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+
+  &:hover {
+    opacity: 0.5;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.faq__item-title {
+  margin: 0;
+  padding: 0;
+  font-family: $Open-sans;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 100%;
+  text-transform: uppercase;
+  color: $text-gray;
+}
+
+.faq__item-toggler {
+  position: relative;
+  display: block;
+  width: 34px;
+  height: 34px;
+  margin: 0;
+  padding: 0;
+  border: none;
+  border-radius: 50%;
+  background-color: $light-bg-gray;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    display: block;
+    width: 12px;
+    height: 12px;
+    border: 1px solid $text-gray;
+    border-left: none;
+    border-top: none;
+
+    transform: translate(-50%, -50%) rotate(45deg);
+  }
+}
+
+.faq__description {
+  box-sizing: border-box;
+  padding: 32px 0;
+  overflow: hidden;
+
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 129%;
+
+  transition: all 500ms ease;
+}
+
+
+@media (min-width: $desktop-width) {
+  .faq {
+    padding: 100px 146px;
+  }
+}
+
+@media (max-width: $mobile-width) {
+  .faq {
+    max-width: $mobile-width;
+    padding: 5vw 5vw;
+  }
+}

@@ -1,9 +1,7 @@
 @import "variables.scss";
 
 .feature-block {
-  box-sizing: border-box;
-  max-width: $desktop-width;
-  width: 100%;
+
   min-height: 39vw;
   overflow: hidden;
   padding: 0 10vw;
@@ -58,12 +56,16 @@
     box-sizing: border-box;
     max-width: $mobile-width;
     width: 100%;
-    // min-height: 39vw;
     padding: 0 5vw;
     grid-template-columns: 1fr;
+    gap: 0;
 
     &--reverse {
       grid-template-columns: 1fr;
     }
+  }
+
+  .feature-block__description {
+    grid-row: 2/3;
   }
 }
