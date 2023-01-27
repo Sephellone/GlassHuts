@@ -60,7 +60,7 @@
       </header>
 
       <!-- Subheader Section  -->
-      <section class="about-us__subheader">
+      <section class="about-us__section about-us__subheader">
         <!-- Picture part -->
         <div class="about-us__image-wrapper">
           <img class="slideshow__image" src="img/aboutus/about-1.jpg" alt="Beautiful river in the foresn near Vesterborg." width="546" height="478">
@@ -76,81 +76,83 @@
       </section>
 
       <section class="about-us__gallery gallery">
-        <h2 class="gallery__title">Lorem ipsum dolor sit amet, consectetur adipiscing...</h2>
+        <h2 class="about-us__section-title gallery__title">Lorem ipsum dolor sit amet, consectetur adipiscing...</h2>
         <div class="gallery__wrapper">
-          <img class="gallery__image" src="img/aboutus/about-2.jpg" alt="The Hut photo" width="432" height="387">
+          <img class="gallery__image gallery__image--top" src="img/aboutus/about-2.jpg" alt="The Hut photo" width="432" height="387">
           <img class="gallery__image gallery__image--long" src="img/aboutus/about-4.jpg" alt="The Hut photo" width="432" height="387">
-          <img class="gallery__image" src="img/aboutus/about-2.jpg" alt="The Hut photo" width="432" height="387">
+          <img class="gallery__image gallery__image--bottom" src="img/aboutus/about-2.jpg" alt="The Hut photo" width="432" height="387">
           <img class="gallery__image" src="img/aboutus/about-3.jpg" alt="The Hut photo" width="432" height="387">
           <p class="gallery__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
         </div>
       </section>
 
-      <section class="about-us__contacts" id="contacts">
-        <h2 class="about-us__contacts-title">Stay in touch with us</h2>
-        <div class="about-us__contacts-info contacts">
-          <div class="contacts__wrapper">
-            <p class="contacts__text">Vesterborg, Denmark</p>
-            <p class="contacts__contacts">
-              <a class="contacts__link" href="tel:+123456789000">+123 456 789 000</a>
-              <br>
-              <a href="mailto:info@theglasshuts.com" class="contacts__link">info@theglasshuts.com</a>
-            </p>
-            <h3 class="visually-hidden">Find us on social network</h3>
-            <ul class="contacts__social-list">
-              <li class="contacts__social-item">
-                <a class="contacts__social-link" href="#">
-                  <span class="visually-hidden">Instagram</span>
-                  <svg class="contacts__social-icon" width="21" height="21">
-                    <use href="img/sprite.svg#instagram"></use>
-                  </svg>
-                </a>
-              </li>
-              <li class="contacts__social-item">
-                <a class="contacts__social-link" href="#">
-                  <span class="visually-hidden">Facebook</span>
-                  <svg class="contacts__social-icon" width="10" height="21">
-                    <use href="img/sprite.svg#facebook"></use>
-                  </svg>
-                </a>
-              </li>
-              <li class="contacts__social-item">
-                <a class="contacts__social-link" href="#">
-                  <span class="visually-hidden">Twitter</span>
-                  <svg class="contacts__social-icon" width="22" height="18">
-                    <use href="img/sprite.svg#twitter"></use>
-                  </svg>
-                </a>
-              </li>
-            </ul>
+      <section class="about-us__section about-us__contacts" id="contacts">
+        <h2 class="about-us__section-title">Stay in touch with us</h2>
+        <div class="about-us__contacts-wrapper">
+          <div class="about-us__contacts-info contacts">
+            <div class="contacts__wrapper">
+              <p class="contacts__text">Vesterborg, Denmark</p>
+              <p class="contacts__contacts">
+                <a class="contacts__link" href="tel:+123456789000">+123 456 789 000</a>
+                <a href="mailto:info@theglasshuts.com" class="contacts__link">info@theglasshuts.com</a>
+              </p>
+              <h3 class="visually-hidden">Find us on social network</h3>
+              <ul class="contacts__social-list">
+                <li class="contacts__social-item">
+                  <a class="contacts__social-link" href="#">
+                    <span class="visually-hidden">Instagram</span>
+                    <svg class="contacts__social-icon" width="21" height="21">
+                      <use href="img/sprite.svg#instagram"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="contacts__social-item">
+                  <a class="contacts__social-link" href="#">
+                    <span class="visually-hidden">Facebook</span>
+                    <svg class="contacts__social-icon" width="10" height="21">
+                      <use href="img/sprite.svg#facebook"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="contacts__social-item">
+                  <a class="contacts__social-link" href="#">
+                    <span class="visually-hidden">Twitter</span>
+                    <svg class="contacts__social-icon" width="22" height="18">
+                      <use href="img/sprite.svg#twitter"></use>
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+            </div>
           </div>
-        </div>
 
-        <form class="about-us__form about-form" action="https://httpbin.org/post" method="post">
-          <div class="about-us__form-wrapper">
-            <div class="about-form__input-wrapper">
-              <label class="about-form__label" for="firstName">First Name</label>
-              <input class="about-form__input about-form__input--small" type="text" name="firstName" id="firstName">
+          <form class="about-us__form about-form" action="https://httpbin.org/post" method="post">
+            <div class="about-us__form-wrapper">
+              <div class="about-form__input-wrapper">
+                <input class="about-form__input" type="text" name="firstName" id="firstName" placeholder="" required>
+                <label class="about-form__label" for="firstName">First Name</label>
+              </div>
+              <div class="about-form__input-wrapper">
+                <input class="about-form__input" type="text" name="lastName" id="lastName" placeholder="">
+                <label class="about-form__label" for="lastName">Last Name</label>
+              </div>
             </div>
             <div class="about-form__input-wrapper">
-              <label class="about-form__label" for="lastName">Last Name</label>
-              <input class="about-form__input about-form__input--small" type="text" name="lastName" id="lasttName">
-            </div>
-            <div class="about-form__input-wrapper">
+              <input class="about-form__input" type="email" name="email" id="email" placeholder="" required>
               <label class="about-form__label" for="email">Email</label>
-              <input class="about-form__input" type="email" name="email" id="email">
             </div>
             <div class="about-form__input-wrapper">
+              <input class="about-form__input" type="text" name="subject" id="subject" placeholder="">
               <label class="about-form__label" for="subject">Subject</label>
-              <input class="about-form__input" type="text" name="subject" id="subject">
             </div>
             <div class="about-form__input-wrapper">
+              <textarea class="about-form__textarea" name="message" id="message" placeholder="" required></textarea>
               <label class="about-form__label" for="message">Message</label>
-              <textarea class="about-form__textarea" name="message" id="message"></textarea>
             </div>
-            <button class="about-form__submit" type="submit">send</button>
-          </div>
-        </form>
+            <button class="about-form__submit button" type="submit">send</button>
+
+          </form>
+        </div>
       </section>
 
       <img class="about-us__with-love" src="img/aboutus/love.svg" alt="From Denmark, with love.">

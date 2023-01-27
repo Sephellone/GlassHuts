@@ -80,15 +80,25 @@
   }
 }
 
+.main-index__contacts {
+  padding: 10.7vw 10vw 9.5vw 10vw;
+}
+
 
 @media (min-width: $desktop-width) {
-
+  .main-index__contacts {
+    padding: 150px 146px 133px 146px;
+  }
 }
 
 @media (max-width: $mobile-width) {
   .main-index__about-link {
     width: 100px;
     height: 100px;
+  }
+
+  .main-index__contacts {
+    padding: 7vw 6vw 5vw 6vw;
   }
 
 }

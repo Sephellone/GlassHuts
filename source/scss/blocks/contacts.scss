@@ -1,7 +1,6 @@
 @import "variables.scss";
 
 .contacts {
-  padding: 10.7vw 10vw 9.5vw 10vw;
   display: flex;
 }
 
@@ -112,9 +111,6 @@
 
 
 @media (min-width: $desktop-width) {
-  .contacts {
-    padding: 150px 146px 133px 146px;
-  }
 
   .contacts__title {
     font-size: 40px;
@@ -128,7 +124,6 @@
 
 @media (max-width: $mobile-width) {
   .contacts {
-    padding: 7vw 6vw 5vw 6vw;
     display: block;
   }
 
