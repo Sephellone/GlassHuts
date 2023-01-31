@@ -1,4 +1,4 @@
-@import "variables.scss";
+@import "../variables.scss";
 
 .inner-header {
   position: relative;
@@ -47,6 +47,15 @@
   &--about {
     background-image: url("../img/aboutus/about-background.jpg");
     background-position: 50% 70%;
+
+    &::after {
+      opacity: 0.6;
+    }
+  }
+
+  &--booking {
+    background-image: url("../img/booking/booking-background.jpg");
+    background-position: 50% 50%;
 
     &::after {
       opacity: 0.6;

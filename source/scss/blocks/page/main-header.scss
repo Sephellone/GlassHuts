@@ -1,19 +1,17 @@
-@import "variables.scss";
+@import "../variables.scss";
 
 .main-header {
   position: relative;
   z-index: 3;
   box-sizing: border-box;
   width: 100%;
-  max-width: 1408px;
+  max-width: $desktop-width;
   margin: 0 auto;
   padding: 20px 32px;
 
   display: flex;
   justify-content: space-between;
   align-items: center;
-
-  box-shadow: 0 2px 20px 0 rgba(0, 0, 0, 0.08);
 }
 
 .main-header__logo-link {

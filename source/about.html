@@ -9,45 +9,46 @@
     <title>About us</title>
   </head>
   <body class="page__body">
-    <header class="page__header main-header">
-      <a class="main-header__logo-link" href="index.html">
-        <img class="main-header__logo" src="img/logo.svg" alt="The Glass Huts logo" width="70" height="65">
-      </a>
-      <div class="main-header__nav-wrapper main-header__nav-wrapper--closed">
-        <nav class="main-header__nav main-nav">
-          <ul class="main-nav__list">
-            <li class="main-nav__item">
-              <a class="main-nav__link" href="index.html">Home</a>
-            </li>
-            <li class="main-nav__item">
-              <a class="main-nav__link" href="hut.html">the hut</a>
-            </li>
-            <li class="main-nav__item">
-              <a class="main-nav__link" href="area.html">The area</a>
-            </li>
-            <li class="main-nav__item">
-              <a class="main-nav__link" href="booking.html">booking</a>
-            </li>
-            <li class="main-nav__item">
-              <a class="main-nav__link" href="about.html">about us</a>
-            </li>
-            <li class="main-nav__item">
-              <a class="main-nav__link" href="faq.html">faq</a>
-            </li>
-          </ul>
-        </nav>
-        <select class="main-header__language" name="language" id="language">
-          <option value="en">English</option>
-          <option value="de">German</option>
-          <option value="dk" selected>Danish</option>
-        </select>
+    <header class="page__header">
+      <div class="main-header">
+        <a class="main-header__logo-link" href="index.html">
+          <img class="main-header__logo" src="img/logo.svg" alt="The Glass Huts logo" width="70" height="65">
+        </a>
+        <div class="main-header__nav-wrapper main-header__nav-wrapper--closed">
+          <nav class="main-header__nav main-nav">
+            <ul class="main-nav__list">
+              <li class="main-nav__item">
+                <a class="main-nav__link" href="index.html">Home</a>
+              </li>
+              <li class="main-nav__item">
+                <a class="main-nav__link" href="hut.html">the hut</a>
+              </li>
+              <li class="main-nav__item">
+                <a class="main-nav__link" href="area.html">The area</a>
+              </li>
+              <li class="main-nav__item">
+                <a class="main-nav__link" href="booking.html">booking</a>
+              </li>
+              <li class="main-nav__item">
+                <a class="main-nav__link" href="about.html">about us</a>
+              </li>
+              <li class="main-nav__item">
+                <a class="main-nav__link" href="faq.html">faq</a>
+              </li>
+            </ul>
+          </nav>
+          <select class="main-header__language" name="language" id="language">
+            <option value="en">English</option>
+            <option value="de">German</option>
+            <option value="dk" selected>Danish</option>
+          </select>
+        </div>
+        <a class="main-header__booking-link button" href="#">Book Now</a>
+
+        <button class="main-header__menu-toggler main-header__menu-toggler--burger">
+          <span class="visually-hidden">Menu</span>
+        </button>
       </div>
-      <a class="main-header__booking-link button" href="#">Book Now</a>
-
-      <button class="main-header__menu-toggler main-header__menu-toggler--burger">
-        <span class="visually-hidden">Menu</span>
-      </button>
-
     </header>
 
     <main class="page__main about-us">
@@ -160,85 +161,87 @@
 
     <!-- footer  -->
     <footer class="page__footer footer">
-      <!-- subscription section -->
-      <div class="footer__subscription">
-        <form
-          class="footer__form"
-          action="https://httpbin.org/post"
-          method="post"
-        >
-          <h2 class="visually-hidden">Subscribe to our Newsletter</h2>
-          <label class="footer__subscription-label" for="subscription">
-            Newsletter
-          </label>
-          <div class="footer__input-wrapper">
-            <input
-              class="footer__subscription-input"
-              type="email"
-              placeholder="Email Adrdess"
-              id="subscription"
-              name="subscription-mail"
-              required
-            >
-            <button class="footer__subscription-button" type="submit">
-              <svg class="footer__subscription-arrow" width="34" height="17">
-                <use href="img/sprite.svg#arrow"></use>
+      <div class="footer-wrapper">
+        <!-- subscription section -->
+        <div class="footer__subscription">
+          <form
+            class="footer__form"
+            action="https://httpbin.org/post"
+            method="post"
+          >
+            <h2 class="visually-hidden">Subscribe to our Newsletter</h2>
+            <label class="footer__subscription-label" for="subscription">
+              Newsletter
+            </label>
+            <div class="footer__input-wrapper">
+              <input
+                class="footer__subscription-input"
+                type="email"
+                placeholder="Email Adrdess"
+                id="subscription"
+                name="subscription-mail"
+                required
+              >
+              <button class="footer__subscription-button" type="submit">
+                <svg class="footer__subscription-arrow" width="34" height="17">
+                  <use href="img/sprite.svg#arrow"></use>
+                </svg>
+                <span class="visually-hidden">Subscribe</span>
+              </button>
+            </div>
+            <p class="footer__text">
+              Sign up to our newsletter for special things and receive 10% off your next order.
+            </p>
+          </form>
+        </div>
+
+        <!-- links section  -->
+        <div class="footer__links">
+          <!-- Official docs links -->
+          <ul class="footer__links-list">
+            <li class="footer__links-item">
+              <a class="footer__link"  href="#">TERMS AND CONDITIONS</a>
+            </li>
+            <li class="footer__links-item">
+              <a class="footer__link"  href="#">CENCELLATION POLICY</a>
+            </li>
+            <li class="footer__links-item">
+              <a class="footer__link"  href="#">PRIVACY POLICY</a>
+            </li>
+          </ul>
+          <!-- payment methods list -->
+          <ul class="footer__payment-list">
+            <li class="footer__payment-item">
+              <svg class="footer__payment-icon" width="51" height="51">
+                <use href="img/sprite.svg#paypal"></use>
               </svg>
-              <span class="visually-hidden">Subscribe</span>
-            </button>
-          </div>
-          <p class="footer__text">
-            Sign up to our newsletter for special things and receive 10% off your next order.
-          </p>
-        </form>
-      </div>
+              <span class="visually-hidden">Paypal</span>
+            </li>
+            <li class="footer__payment-item">
+              <svg class="footer__payment-icon" width="49" height="49">
+                <use href="img/sprite.svg#mastercard"></use>
+              </svg>
+              <span class="visually-hidden">MasterCard</span>
+            </li>
+            <li class="footer__payment-item">
+              <svg class="footer__payment-icon" width="48" height="48">
+                <use href="img/sprite.svg#visa"></use>
+              </svg>
+              <span class="visually-hidden">Visa</span>
+            </li>
+            <li class="footer__payment-item">
+              <svg class="footer__payment-icon" width="32" height="32">
+                <use href="img/sprite.svg#bank-transfer"></use>
+              </svg>
+              <span class="visually-hidden">Bank Transfer</span>
+            </li>
+          </ul>
+        </div>
 
-      <!-- links section  -->
-      <div class="footer__links">
-        <!-- Official docs links -->
-        <ul class="footer__links-list">
-          <li class="footer__links-item">
-            <a class="footer__link"  href="#">TERMS AND CONDITIONS</a>
-          </li>
-          <li class="footer__links-item">
-            <a class="footer__link"  href="#">CENCELLATION POLICY</a>
-          </li>
-          <li class="footer__links-item">
-            <a class="footer__link"  href="#">PRIVACY POLICY</a>
-          </li>
-        </ul>
-        <!-- payment methods list -->
-        <ul class="footer__payment-list">
-          <li class="footer__payment-item">
-            <svg class="footer__payment-icon" width="51" height="51">
-              <use href="img/sprite.svg#paypal"></use>
-            </svg>
-            <span class="visually-hidden">Paypal</span>
-          </li>
-          <li class="footer__payment-item">
-            <svg class="footer__payment-icon" width="49" height="49">
-              <use href="img/sprite.svg#mastercard"></use>
-            </svg>
-            <span class="visually-hidden">MasterCard</span>
-          </li>
-          <li class="footer__payment-item">
-            <svg class="footer__payment-icon" width="48" height="48">
-              <use href="img/sprite.svg#visa"></use>
-            </svg>
-            <span class="visually-hidden">Visa</span>
-          </li>
-          <li class="footer__payment-item">
-            <svg class="footer__payment-icon" width="32" height="32">
-              <use href="img/sprite.svg#bank-transfer"></use>
-            </svg>
-            <span class="visually-hidden">Bank Transfer</span>
-          </li>
-        </ul>
-      </div>
-
-      <!-- copyright  -->
-      <div class="footer__copyright">
-        © 2021 The Glass Huts
+        <!-- copyright  -->
+        <div class="footer__copyright">
+          © 2021 The Glass Huts
+        </div>
       </div>
     </footer>
   </body>

@@ -1,8 +1,13 @@
-@import "variables.scss";
+@import "../variables.scss";
 
 .page {
   min-width: 100%;
   max-width: 100%;
+}
+
+.page__header {
+  width: 100%;
+  box-shadow: 0 2px 20px 0 rgba(0, 0, 0, 0.08);
 }
 
 .page__body {
@@ -27,6 +32,11 @@
   flex-grow: 1;
 }
 
+.page__payment {
+  max-width: $desktop-width;
+  width: 100%;
+  margin: 0 auto;
+}
 
 @media (max-width: $mobile-width) {
   .page__body {

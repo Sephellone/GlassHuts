@@ -9,64 +9,67 @@
     <title>Book the Hut</title>
   </head>
   <body class="page__body">
-    <header class="page__header main-header">
-      <a class="main-header__logo-link" href="index.html">
-        <img class="main-header__logo" src="img/logo.svg" alt="The Glass Huts logo" width="70" height="65">
-      </a>
-      <div class="main-header__nav-wrapper main-header__nav-wrapper--closed">
-        <nav class="main-header__nav main-nav">
-          <ul class="main-nav__list">
-            <li class="main-nav__item">
-              <a class="main-nav__link" href="index.html">Home</a>
-            </li>
-            <li class="main-nav__item">
-              <a class="main-nav__link" href="hut.html">the hut</a>
-            </li>
-            <li class="main-nav__item">
-              <a class="main-nav__link" href="area.html">The area</a>
-            </li>
-            <li class="main-nav__item">
-              <a class="main-nav__link" href="booking.html">booking</a>
-            </li>
-            <li class="main-nav__item">
-              <a class="main-nav__link" href="about.html">about us</a>
-            </li>
-            <li class="main-nav__item">
-              <a class="main-nav__link" href="faq.html">faq</a>
-            </li>
-          </ul>
-        </nav>
-        <select class="main-header__language" name="language" id="language">
-          <option value="en">English</option>
-          <option value="de">German</option>
-          <option value="dk" selected>Danish</option>
-        </select>
+    <header class="page__header">
+      <div class="main-header">
+        <a class="main-header__logo-link" href="index.html">
+          <img class="main-header__logo" src="img/logo.svg" alt="The Glass Huts logo" width="70" height="65">
+        </a>
+        <div class="main-header__nav-wrapper main-header__nav-wrapper--closed">
+          <nav class="main-header__nav main-nav">
+            <ul class="main-nav__list">
+              <li class="main-nav__item">
+                <a class="main-nav__link" href="index.html">Home</a>
+              </li>
+              <li class="main-nav__item">
+                <a class="main-nav__link" href="hut.html">the hut</a>
+              </li>
+              <li class="main-nav__item">
+                <a class="main-nav__link" href="area.html">The area</a>
+              </li>
+              <li class="main-nav__item">
+                <a class="main-nav__link" href="booking.html">booking</a>
+              </li>
+              <li class="main-nav__item">
+                <a class="main-nav__link" href="about.html">about us</a>
+              </li>
+              <li class="main-nav__item">
+                <a class="main-nav__link" href="faq.html">faq</a>
+              </li>
+            </ul>
+          </nav>
+          <select class="main-header__language" name="language" id="language">
+            <option value="en">English</option>
+            <option value="de">German</option>
+            <option value="dk" selected>Danish</option>
+          </select>
+        </div>
+        <a class="main-header__booking-link button" href="#">Book Now</a>
+
+        <button class="main-header__menu-toggler main-header__menu-toggler--burger">
+          <span class="visually-hidden">Menu</span>
+        </button>
       </div>
-      <a class="main-header__booking-link button" href="#">Book Now</a>
-
-      <button class="main-header__menu-toggler main-header__menu-toggler--burger">
-        <span class="visually-hidden">Menu</span>
-      </button>
-
     </header>
 
     <main class="page__main page__booking booking">
-      <div class="booking__header">
-        <h1 class="booking__title">Booking</h1>
-        <p class="booking__subtitle">Vesterborg, Denmark</p>
-      </div>
+      <header class="booking__header inner-header inner-header--booking">
+        <div class="inner-header__title-wrapper">
+          <h1 class="inner-header__title">Booking</h1>
+          <a class="inner-header__location" href="#vesterborg">Vesterborg, Denmark</a>
+        </div>
+      </header>
 
       <!-- booking form -->
       <form class="booking__form" action="https://httpbin.org/post" method="post">
         <!-- left column with additional services and rules  -->
         <div class="booking__wrapper">
           <div class="booking__services">
-            <h2 class="booking__services-title">Choose Additional Services</h2>
+            <h2 class="booking__title booking__title--services">Choose Additional Services</h2>
             <ul class="booking__service-list">
-              <li class="booking__service-item service-card">
+              <li class="booking__service-item service-card service-card--closed">
                 <div class="service-card__header">
                   <label class="service-card__label checkbox-control">
-                    <input class="checkbox-control__input visually-hidden" type="checkbox" name="breakfast-one">
+                    <input class="checkbox-control__input visually-hidden" type="checkbox" name="breakfast1">
                     <span class="checkbox-control__mark"></span>
                     <span class="checkbox-control__name">Fresh Breakfast for one </span>
                     <span class="checkbox-control__price">
@@ -83,10 +86,10 @@
                 </div>
               </li>
 
-              <li class="booking__service-item service-card">
+              <li class="booking__service-item service-card service-card--opened">
                 <div class="service-card__header">
                   <label class="service-card__label checkbox-control">
-                    <input class="checkbox-control__input visually-hidden" type="checkbox" name="breakfast-two">
+                    <input class="checkbox-control__input visually-hidden" type="checkbox" name="breakfast2">
                     <span class="checkbox-control__mark"></span>
                     <span class="checkbox-control__name">Fresh Breakfast for two </span>
                     <span class="checkbox-control__price">
@@ -103,10 +106,10 @@
                 </div>
               </li>
 
-              <li class="booking__service-item service-card">
+              <li class="booking__service-item service-card service-card--closed">
                 <div class="service-card__header">
                   <label class="service-card__label checkbox-control">
-                    <input class="checkbox-control__input visually-hidden" type="checkbox" name="dinner-one">
+                    <input class="checkbox-control__input visually-hidden" type="checkbox" name="dinner1">
                     <span class="checkbox-control__mark"></span>
                     <span class="checkbox-control__name">Classic Dinner for one</span>
                     <span class="checkbox-control__price">
@@ -123,10 +126,10 @@
                 </div>
               </li>
 
-              <li class="booking__service-item service-card">
+              <li class="booking__service-item service-card service-card--closed">
                 <div class="service-card__header">
                   <label class="service-card__label checkbox-control">
-                    <input class="checkbox-control__input visually-hidden" type="checkbox" name="dinner-two">
+                    <input class="checkbox-control__input visually-hidden" type="checkbox" name="dinner2">
                     <span class="checkbox-control__mark"></span>
                     <span class="checkbox-control__name">Classic Dinner for two </span>
                     <span class="checkbox-control__price">
@@ -143,10 +146,10 @@
                 </div>
               </li>
 
-              <li class="booking__service-item service-card">
+              <li class="booking__service-item service-card service-card--closed">
                 <div class="service-card__header">
                   <label class="service-card__label checkbox-control">
-                    <input class="checkbox-control__input visually-hidden" type="checkbox" name="charger">
+                    <input class="checkbox-control__input visually-hidden" type="checkbox" name="car">
                     <span class="checkbox-control__mark"></span>
                     <span class="checkbox-control__name">Electric Car Charge</span>
                     <span class="checkbox-control__price">
@@ -167,7 +170,7 @@
 
           <!-- rules section  -->
           <div class="booking__info">
-            <h2 class="booking__info-title">Hut rules</h2>
+            <h2 class="booking__title booking__title--info">Hut rules</h2>
             <div class="booking__info-text">
               <ul class="booking__info-list">
                 <li class="booking__info-item">Check-in:  2:00 PM - 11:00 PM</li>
@@ -180,7 +183,7 @@
           </div>
 
           <div class="booking__info">
-            <h2 class="booking__info-title">Cancellation policy</h2>
+            <h2 class="booking__title booking__title--info">Cancellation policy</h2>
             <p class="booking__info-text">
               Free cancellation until 1:00 PM on <span id="free-cancellation-date">Mar 27</span>
               <br> After that, cancel before 2:00 PM on <span id="charged-cancellation-date">Apr 1</span> and get a 50% refund, minus the first night and service fee.
@@ -188,50 +191,56 @@
           </div>
 
           <div class="booking__info">
-            <h2 class="booking__info-title">Important Information</h2>
+            <h2 class="booking__title booking__title--info">Important Information</h2>
             <p class="booking__info-text">
               You need to hike a steep hill to arrive at the treehouses, it takes approx 20-30 minutes on a trail with stairs and uneven ground.
             </p>
           </div>
 
-          <a class="booking__faq-link" href="faq.html">read FAQ</a>
+          <a class="booking__faq-link button" href="faq.html">read FAQ</a>
         </div>
 
 
         <!-- right column with order details, sum and button  -->
         <div class="booking__total total">
           <p class="total__price">
-            <span class="total__price-amount">3.200kr</span> / night
+            <span class="total__price-amount">3.200kr</span>
+             / night
           </p>
           <div class="total__inputs">
             <div class="total__input-wrapper">
               <label class="total__input-label" for="checkin">
                 <span class="total__input-label-text">Check in</span>
               </label>
-              <input class="total__input" id="checkin" type="date" name="checkin">
+              <input class="total__input" id="checkin" type="date" name="checkin" required>
             </div>
 
             <div class="total__input-wrapper">
               <label class="total__input-label" for="checkout">
                 <span class="total__input-label-text">Check out</span>
               </label>
-              <input class="total__input" id="checkout" type="date" name="checkout">
+              <input class="total__input" id="checkout" type="date" name="checkout" required>
             </div>
 
             <div class="total__input-wrapper">
               <label class="total__input-label" for="guests">
                 <span class="total__input-label-text">Guests</span>
               </label>
-              <button class="total__guests total__guests--less" type="button">
-                <span class="visually-hidden">Remove guest</span>
-              </button>
-              <input class="total__input total__input--number" id="guests" type="number" name="guests" placeholder="1" min="1" value="1">
-              <button class="total__guests total__guests--more" type="button">
-                <span class="visually-hidden">Add guest</span>
-              </button>
+
+              <div class="total__input-number-wrapper">
+                <button class="total__guests total__guests--less" type="button">
+                  &minus;
+                  <span class="visually-hidden">Remove guest</span>
+                </button>
+                <input class="total__input total__input--number" id="guests" type="number" name="guests" placeholder="1" min="1" value="1" max="3">
+                <button class="total__guests total__guests--more" type="button">
+                  +
+                  <span class="visually-hidden">Add guest</span>
+                </button>
+              </div>
             </div>
           </div>
-          <button class="total__submit-button" type="submit">Book</button>
+          <a class="total__submit-button button" href="payment.html">Book</a>
 
           <ul class="total__details">
 
@@ -244,7 +253,25 @@
               </p>
             </li>
 
-            <li class="total__element">
+            <li class="total__element total__element--hidden" data-option="breakfast1">
+              <p class="total__name">
+                Fresh Breakfast for one
+              </p>
+              <p class="total__sum">
+                <span class="total__sum-number">400</span> kr
+              </p>
+            </li>
+
+            <li class="total__element total__element--hidden" data-option="breakfast2">
+              <p class="total__name">
+                Fresh Breakfast for two
+              </p>
+              <p class="total__sum">
+                <span class="total__sum-number">500</span> kr
+              </p>
+            </li>
+
+            <li class="total__element" data-option="dinner1">
               <p class="total__name">
                 Classic Dinner for one
               </p>
@@ -253,7 +280,16 @@
               </p>
             </li>
 
-            <li class="total__element">
+            <li class="total__element total__element--hidden" data-option="dinner2">
+              <p class="total__name">
+                Classic Dinner for two
+              </p>
+              <p class="total__sum">
+                <span class="total__sum-number">800</span> kr
+              </p>
+            </li>
+
+            <li class="total__element" data-option="car">
               <p class="total__name">
                 Electric Car Charge
               </p>
@@ -280,10 +316,11 @@
             </p>
           </div>
 
-          <label class="visually-hidden" for="coupon">Input a coupon code</label>
-          <input class="total__coupon-input" id="coupon" type="text" name="coupon" placeholder="Coupon Code">
-          <button class="total__coupon-button" type="button">apply</button>
-
+          <div class="total__coupon-wrapper">
+            <label class="visually-hidden" for="coupon">Input a coupon code</label>
+            <input class="total__coupon-input" id="coupon" type="text" name="coupon" placeholder="Coupon Code">
+            <button class="total__coupon-button button" type="button">apply</button>
+          </div>
         </div>
 
       </form>
@@ -291,85 +328,87 @@
 
     <!-- footer  -->
     <footer class="page__footer footer">
-      <!-- subscription section -->
-      <div class="footer__subscription">
-        <form
-          class="footer__form"
-          action="https://httpbin.org/post"
-          method="post"
-        >
-          <h2 class="visually-hidden">Subscribe to our Newsletter</h2>
-          <label class="footer__subscription-label" for="subscription">
-            Newsletter
-          </label>
-          <div class="footer__input-wrapper">
-            <input
-              class="footer__subscription-input"
-              type="email"
-              placeholder="Email Adrdess"
-              id="subscription"
-              name="subscription-mail"
-              required
-            >
-            <button class="footer__subscription-button" type="submit">
-              <svg class="footer__subscription-arrow" width="34" height="17">
-                <use href="img/sprite.svg#arrow"></use>
+      <div class="footer-wrapper">
+        <!-- subscription section -->
+        <div class="footer__subscription">
+          <form
+            class="footer__form"
+            action="https://httpbin.org/post"
+            method="post"
+          >
+            <h2 class="visually-hidden">Subscribe to our Newsletter</h2>
+            <label class="footer__subscription-label" for="subscription">
+              Newsletter
+            </label>
+            <div class="footer__input-wrapper">
+              <input
+                class="footer__subscription-input"
+                type="email"
+                placeholder="Email Adrdess"
+                id="subscription"
+                name="subscription-mail"
+                required
+              >
+              <button class="footer__subscription-button" type="submit">
+                <svg class="footer__subscription-arrow" width="34" height="17">
+                  <use href="img/sprite.svg#arrow"></use>
+                </svg>
+                <span class="visually-hidden">Subscribe</span>
+              </button>
+            </div>
+            <p class="footer__text">
+              Sign up to our newsletter for special things and receive 10% off your next order.
+            </p>
+          </form>
+        </div>
+
+        <!-- links section  -->
+        <div class="footer__links">
+          <!-- Official docs links -->
+          <ul class="footer__links-list">
+            <li class="footer__links-item">
+              <a class="footer__link"  href="#">TERMS AND CONDITIONS</a>
+            </li>
+            <li class="footer__links-item">
+              <a class="footer__link"  href="#">CENCELLATION POLICY</a>
+            </li>
+            <li class="footer__links-item">
+              <a class="footer__link"  href="#">PRIVACY POLICY</a>
+            </li>
+          </ul>
+          <!-- payment methods list -->
+          <ul class="footer__payment-list">
+            <li class="footer__payment-item">
+              <svg class="footer__payment-icon" width="51" height="51">
+                <use href="img/sprite.svg#paypal"></use>
               </svg>
-              <span class="visually-hidden">Subscribe</span>
-            </button>
-          </div>
-          <p class="footer__text">
-            Sign up to our newsletter for special things and receive 10% off your next order.
-          </p>
-        </form>
-      </div>
+              <span class="visually-hidden">Paypal</span>
+            </li>
+            <li class="footer__payment-item">
+              <svg class="footer__payment-icon" width="49" height="49">
+                <use href="img/sprite.svg#mastercard"></use>
+              </svg>
+              <span class="visually-hidden">MasterCard</span>
+            </li>
+            <li class="footer__payment-item">
+              <svg class="footer__payment-icon" width="48" height="48">
+                <use href="img/sprite.svg#visa"></use>
+              </svg>
+              <span class="visually-hidden">Visa</span>
+            </li>
+            <li class="footer__payment-item">
+              <svg class="footer__payment-icon" width="32" height="32">
+                <use href="img/sprite.svg#bank-transfer"></use>
+              </svg>
+              <span class="visually-hidden">Bank Transfer</span>
+            </li>
+          </ul>
+        </div>
 
-      <!-- links section  -->
-      <div class="footer__links">
-        <!-- Official docs links -->
-        <ul class="footer__links-list">
-          <li class="footer__links-item">
-            <a class="footer__link"  href="#">TERMS AND CONDITIONS</a>
-          </li>
-          <li class="footer__links-item">
-            <a class="footer__link"  href="#">CENCELLATION POLICY</a>
-          </li>
-          <li class="footer__links-item">
-            <a class="footer__link"  href="#">PRIVACY POLICY</a>
-          </li>
-        </ul>
-        <!-- payment methods list -->
-        <ul class="footer__payment-list">
-          <li class="footer__payment-item">
-            <svg class="footer__payment-icon" width="51" height="51">
-              <use href="img/sprite.svg#paypal"></use>
-            </svg>
-            <span class="visually-hidden">Paypal</span>
-          </li>
-          <li class="footer__payment-item">
-            <svg class="footer__payment-icon" width="49" height="49">
-              <use href="img/sprite.svg#mastercard"></use>
-            </svg>
-            <span class="visually-hidden">MasterCard</span>
-          </li>
-          <li class="footer__payment-item">
-            <svg class="footer__payment-icon" width="48" height="48">
-              <use href="img/sprite.svg#visa"></use>
-            </svg>
-            <span class="visually-hidden">Visa</span>
-          </li>
-          <li class="footer__payment-item">
-            <svg class="footer__payment-icon" width="32" height="32">
-              <use href="img/sprite.svg#bank-transfer"></use>
-            </svg>
-            <span class="visually-hidden">Bank Transfer</span>
-          </li>
-        </ul>
-      </div>
-
-      <!-- copyright  -->
-      <div class="footer__copyright">
-        © 2021 The Glass Huts
+        <!-- copyright  -->
+        <div class="footer__copyright">
+          © 2021 The Glass Huts
+        </div>
       </div>
     </footer>
   </body>

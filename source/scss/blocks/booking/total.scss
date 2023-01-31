@@ -1,0 +1,296 @@
+@import "../variables.scss";
+
+.total{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 24px;
+  border: 0.7px solid $dark-bg-gray;
+}
+
+.total__header {
+  box-sizing: border-box;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-end;
+  margin-bottom: 24px;
+}
+
+.total__title {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  margin-right: 17px;
+
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 167%;
+}
+
+.total__address {
+  position: relative;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  padding-left: 18px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 200%;
+
+}
+
+.total__price {
+  margin: 0;
+  margin-bottom: 20px;
+  padding: 0;
+
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 250%;
+}
+
+.total__price-amount {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 167%;
+}
+
+.total__inputs {
+  box-sizing: border-box;
+  max-width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 24px;
+  border: 0.7px solid $dark-bg-gray;
+}
+
+.total__input-wrapper {
+  box-sizing: border-box;
+  position: relative;
+  flex-grow: 1;
+  &:not(:last-child)::after {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 1px;
+    height: 80%;
+    top: 50%;
+    right: 0;
+    background-color: $dark-bg-gray;
+
+    transform: translate(-50%, -50%);
+  }
+}
+
+.total__input-label {
+  position: absolute;
+  top: 14px;
+  left: 17px;
+  font-family: $Clear-sans;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 16px;
+}
+
+.total__input {
+  box-sizing: border-box;
+  display: block;
+  max-width: 100px;
+  padding: 0;
+  padding: 17px;
+  padding-right: 0;
+  padding-top: 33px;
+
+  font-family: $Open-sans;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  letter-spacing: -0.5px;
+  border: none;
+  box-shadow: none;
+
+  &::-webkit-calendar-picker-indicator{
+    display: none;
+  }
+
+  &--number {
+    width: 43px;
+    padding-left: 0;
+    padding-right: 0;
+    text-align: center;
+    -moz-appearance: textfield;
+    &::-webkit-outer-spin-button,
+    &::-webkit-inner-spin-button {
+      -webkit-appearance: none;
+      margin: 0;
+    }
+  }
+}
+
+.total__input-number-wrapper {
+  display: flex;
+  align-items: center;
+
+}
+
+.total__guests {
+  box-sizing: border-box;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  padding-bottom: 17px;
+  padding-top: 33px;
+  min-width: 30px;
+  max-width: 42px;
+
+  font-family: $Open-sans;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 20px;
+
+  background-color: transparent;
+  border: none;
+  box-shadow: none;
+
+  cursor: pointer;
+
+  &:hover {
+    filter: drop-shadow(0 0 2px $dark-bg-gray);
+  }
+
+  &:active {
+    opacity: 0.5;
+  }
+}
+
+
+.total__submit-button {
+  box-sizing: border-box;
+  width: 100%;
+  margin-bottom: 30px;
+}
+
+.total__details {
+  box-sizing: border-box;
+  margin: 0;
+  margin-bottom: 25px;
+  padding: 0;
+  padding-bottom: 5px;
+  list-style-type: none;
+
+  border-bottom: 0.7px solid $dark-bg-gray;
+}
+
+.total__element {
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0;
+  margin-bottom: 20px;
+  padding: 0;
+
+  &--discount {
+    color: $discount-green;
+  }
+
+  &--hidden {
+    display: none;
+  }
+}
+
+.total__name,
+.total__sum {
+  margin: 0;
+  padding: 0;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 112%;
+}
+
+.total__final {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0;
+  margin-bottom: 40px;
+  padding: 0;
+
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 18px;
+
+  &--payment {
+    margin-bottom: 0;
+  }
+}
+
+.total__final-name,
+.total__final-amount {
+  margin: 0;
+  padding: 0;
+}
+
+.total__coupon-wrapper {
+  width: 100%;
+  box-sizing: border-box;
+  display: flex;
+}
+
+.total__coupon-input {
+  box-sizing: border-box;
+  width: 100%;
+  padding: 16px 20px;
+  flex-grow: 1;
+  font-family: $Open-sans;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+  border: 0.7px solid $dark-bg-gray;
+  border-radius: 0;
+}
+
+.total__coupon-button {
+  width: 100px;
+}
+
+@media (max-width: $mobile-width) {
+  .total {
+    padding: 10px;
+  }
+
+  .total__inputs {
+    flex-direction: column;
+    justify-content: center;
+    border: none;
+  }
+
+  .total__input-wrapper {
+    width: 100%;
+    border: 1px solid $dark-bg-gray;
+
+    &:not(:last-child)::after {
+      display: none;
+    }
+  }
+
+  .total__input {
+    box-sizing: border-box;
+    max-width: 100%;
+    padding: 10px;
+    padding-top: 30px;
+
+    &--number {
+      max-width: 100px;
+    }
+  }
+
+  .total__guests {
+    padding: 10px;
+    padding-top: 30px;
+  }
+}

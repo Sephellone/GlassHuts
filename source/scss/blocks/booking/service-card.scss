@@ -1,0 +1,99 @@
+@import "../variables.scss";
+
+.service-card {
+  &--closed {
+    .service-card__description {
+      max-height: 0;
+      padding: 0 24px;
+    }
+  }
+
+  &--opened {
+    .service-card__toggler{
+      &::after {
+        top: 30%;
+        transform: rotate(225deg)  translate(-50%, -50%);
+      }
+    }
+
+    .service-card__description {
+      max-height: 1000px;
+    }
+  }
+}
+
+.service-card__header {
+  display: flex;
+  align-items: center;
+  padding: 0 24px;
+
+  background-color: $light-bg-gray;
+}
+
+.service-card__toggler {
+  position: relative;
+  display: block;
+  width: 70px;
+  height: 70px;
+  margin-left: auto;
+
+  background-color: transparent;
+  border: none;
+  outline: none;
+  box-shadow: none;
+
+  cursor: pointer;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: 5%;
+    box-sizing: border-box;
+    display: block;
+    width: 16px;
+    height: 16px;
+    border: 1px solid $text-gray;
+    border-top: none;
+    border-left: none;
+
+    transform: rotate(45deg) translate(-50%, -50%);
+  }
+
+  &:hover {
+    filter: drop-shadow(0 0 2px $dark-bg-gray);
+  }
+
+  &:active {
+    opacity: 0.5;
+  }
+}
+
+.service-card__description {
+  margin: 0;
+  padding: 24px;
+  overflow: hidden;
+
+  transition: all 0.3s ease;
+}
+
+.service-card__title {
+  margin: 0;
+  margin-bottom: 10px;
+  padding: 0;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 125%;
+}
+
+.sercice-card__text {
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
+  line-height: 143%;
+}
+
+
+@media (max-width: $mobile-width) {
+
+}

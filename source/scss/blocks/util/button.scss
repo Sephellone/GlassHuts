@@ -1,4 +1,4 @@
-@import "variables.scss";
+@import "../variables.scss";
 
 .button {
   display: block;
@@ -13,6 +13,7 @@
   text-transform: uppercase;
   text-decoration: none;
   text-align: center;
+  letter-spacing: 1px;
 
   background-color: $dark-bg-gray;
   border: none;

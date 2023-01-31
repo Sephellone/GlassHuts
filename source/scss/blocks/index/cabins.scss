@@ -1,7 +1,9 @@
-@import "variables.scss";
+@import "../variables.scss";
 
 .cabins {
+  box-sizing: border-box;
   width: 100%;
+  max-width: $desktop-width;
   padding-bottom: 9.6vw;
 }
 

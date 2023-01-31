@@ -1,0 +1,142 @@
+@import "../variables.scss";
+
+.booking {
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.booking__form{
+  box-sizing: border-box;
+  max-width: $desktop-width;
+  width: 100%;
+  margin: 0 auto;
+  padding: 10.7vw 32px 7vw 10vw;
+
+  display: grid;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
+
+.booking__wrapper {
+  width: 47vw;
+  max-width: $desktop-width;
+  margin-right: auto;
+}
+
+.booking__services {
+  margin-bottom: 7vw;
+}
+
+.booking__title {
+  margin: 0;
+  margin-bottom: 24px;
+  padding: 0;
+  padding-bottom: 25px;
+  font-style: normal;
+
+  font-size: 24px;
+  line-height: 100%;
+  color: $dark-bg-gray;
+
+  border-bottom: 0.7px solid $dark-bg-gray;
+
+  &--services {
+    font-weight: 400;
+  }
+
+  &--info {
+    font-weight: 600;
+  }
+}
+
+.booking__service-list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.booking__service-item {
+  margin-bottom: 24px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.booking__info-text {
+  margin: 0;
+  margin-bottom: 7vw;
+  padding: 0;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 175%;
+}
+
+.booking__info-list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.booking__info-item {
+  line-height: 112%;
+  margin-bottom: 18px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.booking__faq-link {
+  width: 180px;
+  margin-left: auto;
+  letter-spacing: 1px;
+}
+
+.booking__total{
+  box-sizing: border-box;
+  align-self: flex-start;
+  max-width: 432px;
+  width: 39vw;
+}
+
+@media (min-width: $desktop-width) {
+  .booking__services {
+    margin-bottom: 100px;
+  }
+
+  .booking__form{
+    padding: 150px 32px 100px 145px;
+    gap: 138px;
+  }
+
+  .booking__info-text {
+    margin-bottom: 100px;
+  }
+}
+
+@media (max-width: $mobile-width) {
+  .booking__form{
+    padding: 5vw;
+    display: flex;
+    flex-direction: column-reverse;
+    // row-gap: 30px;
+  }
+
+  .booking__total {
+    width: 100%;
+    max-width: 100%;
+    margin-bottom: 30px;
+  }
+
+  .booking__wrapper {
+    width: 100%;
+    max-width: 100%;
+    padding-top: 30px;
+  }
+
+  .booking__services {
+    margin-bottom: 35px;
+  }
+}

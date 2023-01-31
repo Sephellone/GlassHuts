@@ -1,8 +1,10 @@
-@import "variables.scss";
+@import "../variables.scss";
 
 .forest {
   display: grid;
   grid-template-columns: 1fr 1fr;
+  max-width: $desktop-width;
+  box-sizing: border-box;
   // min-height: 46vw;
 
 }

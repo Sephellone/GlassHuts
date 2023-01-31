@@ -1,12 +1,18 @@
-@import "variables.scss";
+@import "../variables.scss";
 
 .footer {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  padding: calc(30px + 5vw) calc(19px + 9vw);
-
   background-color: $dark-bg-gray;
   color: $white;
+
+}
+
+.footer-wrapper {
+  box-sizing: border-box;
+  max-width: $desktop-width;
+  margin: 0 auto;
+  padding: 7vw 10vw;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
 }
 
 .footer__subscription-label {
@@ -151,9 +157,20 @@
   margin-left: 40px;
 }
 
+@media (min-width: $desktop-width) {
+  .footer-wrapper {
+    box-sizing: border-box;
+    max-width: $desktop-width;
+    margin: 0 auto;
+    padding: 100px 145px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
 
 @media (max-width: $mobile-width) {
-  .footer {
+  .footer-wrapper {
     grid-template-columns: 1fr;
     padding: 40px;
     gap: 20px
