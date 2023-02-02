@@ -89,21 +89,24 @@
   }
 
   .main-header__nav-wrapper {
+    box-sizing: border-box;
     position: absolute;
     display: flex;
     flex-direction: column;
+    align-items: center;
+    justify-content: center;
     top: 100%;
     left: 0;
     width: 100%;
-    padding-left: 25px;
-    background-color: rgba(255, 255, 255, 0.8);
+    padding: 25px;
+    background-color: rgba(255, 255, 255, 0.9);
 
     &--closed {
       display: none;
     }
 
     &--opened {
-      display: block;
+      display: flex;
     }
   }
 
