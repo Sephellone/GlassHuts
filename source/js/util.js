@@ -17,5 +17,12 @@ const getTwoDigitsNumber = (number) => {
   return newNumber;
 }
 
+const calcDaysBetweenDates = (date1, date2) => {
+  const milliseconds = date2.getTime() - date1.getTime();
+  const difference = Math.ceil(milliseconds/(1000 * 60 * 60 * 24));
 
-export {toggleClasses, getTwoDigitsNumber};
+  return difference;
+};
+
+
+export {toggleClasses, getTwoDigitsNumber, calcDaysBetweenDates};

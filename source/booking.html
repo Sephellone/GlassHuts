@@ -228,12 +228,12 @@
               </label>
 
               <div class="total__input-number-wrapper">
-                <button class="total__guests total__guests--less" type="button">
+                <button class="total__guests total__guests--less" id="less-guests" type="button">
                   &minus;
                   <span class="visually-hidden">Remove guest</span>
                 </button>
                 <input class="total__input total__input--number" id="guests" type="number" name="guests" placeholder="1" min="1" value="1" max="3">
-                <button class="total__guests total__guests--more" type="button">
+                <button class="total__guests total__guests--more" id="more-guests" type="button">
                   +
                   <span class="visually-hidden">Add guest</span>
                 </button>
@@ -249,7 +249,7 @@
                 3.200kr x <span id="nights">2</span> nights
               </p>
               <p class="total__sum">
-                <span class="total__sum-number">6.400</span> kr
+                <span class="total__sum-number" id="nightsPrice">6400</span> kr
               </p>
             </li>
 
@@ -298,12 +298,12 @@
               </p>
             </li>
 
-            <li class="total__element total__element--discount">
+            <li class="total__element total__element--discount total__element--hidden">
               <p class="total__name">
                 10% discount
               </p>
               <p class="total__sum">
-                <span class="total__sum-number">-200</span> kr
+                <span class="total__discount-number" id="discount">-200</span> kr
               </p>
             </li>
           </ul>

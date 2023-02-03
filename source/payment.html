@@ -57,11 +57,11 @@
       <form class="payment__form" action="https://httpbin.org/post" method="post">
         <!-- hidden checkboxes for transferring data from booking page  -->
         <div class="visually-hidden">
-          <input type="checkbox" name="breakfast1">
-          <input type="checkbox" name="breakfast2">
-          <input type="checkbox" name="dinner1">
-          <input type="checkbox" name="dinner2">
-          <input type="checkbox" name="car">
+          <input class="payment__checkbox" type="checkbox" name="breakfast1">
+          <input class="payment__checkbox" type="checkbox" name="breakfast2">
+          <input class="payment__checkbox" type="checkbox" name="dinner1">
+          <input class="payment__checkbox" type="checkbox" name="dinner2">
+          <input class="payment__checkbox" type="checkbox" name="car">
         </div>
         <!-- left column with personal data  -->
         <div class="payment__wrapper">
@@ -211,14 +211,14 @@
               <label class="total__input-label" for="checkin">
                 <span class="total__input-label-text">Check in</span>
               </label>
-              <input class="total__input" id="checkin" type="date" name="checkin" readonly>
+              <input class="total__input" id="pay-checkin" type="date" name="checkin" readonly>
             </div>
 
             <div class="total__input-wrapper">
               <label class="total__input-label" for="checkout">
                 <span class="total__input-label-text">Check out</span>
               </label>
-              <input class="total__input" id="checkout" type="date" name="checkout" readonly>
+              <input class="total__input" id="pay-checkout" type="date" name="checkout" readonly>
             </div>
 
             <div class="total__input-wrapper">
@@ -231,7 +231,7 @@
                   &minus;
                   <span class="visually-hidden">Remove guest</span>
                 </button>
-                <input class="total__input total__input--number" id="guests" type="number" name="guests" placeholder="1" min="1" value="1" max="3">
+                <input class="total__input total__input--number" id="pay-guests" type="number" name="guests" placeholder="1" min="1" value="1" max="3" readonly>
                 <button class="total__guests total__guests--more" type="button" disabled>
                   +
                   <span class="visually-hidden">Add guest</span>
@@ -244,10 +244,10 @@
 
             <li class="total__element">
               <p class="total__name">
-                3.200kr x <span id="nights">2</span> nights
+                3.200kr x <span id="pay-nights">2</span> nights
               </p>
               <p class="total__sum">
-                <span class="total__sum-number">6.400</span> kr
+                <span class="total__sum-number" id="pay-accomodation">6.400</span> kr
               </p>
             </li>
 
@@ -269,7 +269,7 @@
               </p>
             </li>
 
-            <li class="total__element" data-option="dinner1">
+            <li class="total__element total__element--hidden" data-option="dinner1">
               <p class="total__name">
                 Classic Dinner for one
               </p>
@@ -287,7 +287,7 @@
               </p>
             </li>
 
-            <li class="total__element" data-option="car">
+            <li class="total__element total__element--hidden" data-option="car">
               <p class="total__name">
                 Electric Car Charge
               </p>
@@ -296,12 +296,12 @@
               </p>
             </li>
 
-            <li class="total__element total__element--discount">
+            <li class="total__element total__element--hidden total__element--discount">
               <p class="total__name">
                 10% discount
               </p>
               <p class="total__sum">
-                <span class="total__sum-number">-200</span> kr
+                <span class="total__sum-number" id="pay-discount">-200</span> kr
               </p>
             </li>
           </ul>
@@ -309,7 +309,7 @@
           <div class="total__final total__final--payment">
             <p class="total__final-name">Total</p>
             <p class="total__final-amount">
-              <span id="final-amount">7000</span>
+              <span id="pay-final">7000</span>
               kr
             </p>
           </div>
@@ -403,5 +403,7 @@
         </div>
       </div>
     </footer>
+    <!-- js -->
+    <script src="js/main.js" type="module"></script>
   </body>
 </html>

@@ -158,6 +158,11 @@
 
   cursor: pointer;
 
+  &:disabled {
+    pointer-events: none;
+    color: $disabled-gray;
+  }
+
   &:hover {
     filter: drop-shadow(0 0 2px $dark-bg-gray);
   }
