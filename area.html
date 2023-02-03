@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html class="page" lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="favicon.ico">
+    <link rel="manifest" href="manifest.webmanifest">
+    <link rel="stylesheet" href="css/style.min.css">
+    <title>The Area</title>
+  </head>
+  <body class="page__body">
+    <header class="page__header">
+      <div class="main-header">
+        <a class="main-header__logo-link" href="index.html">
+          <img class="main-header__logo" src="img/logo.svg" alt="The Glass Huts logo" width="70" height="65">
+        </a>
+        <div class="main-header__nav-wrapper main-header__nav-wrapper--closed">
+          <nav class="main-header__nav main-nav">
+            <ul class="main-nav__list">
+              <li class="main-nav__item">
+                <a class="main-nav__link" href="index.html">Home</a>
+              </li>
+              <li class="main-nav__item">
+                <a class="main-nav__link" href="hut.html">the hut</a>
+              </li>
+              <li class="main-nav__item">
+                <a class="main-nav__link" href="area.html">The area</a>
+              </li>
+              <li class="main-nav__item">
+                <a class="main-nav__link" href="booking.html">booking</a>
+              </li>
+              <li class="main-nav__item">
+                <a class="main-nav__link" href="about.html">about us</a>
+              </li>
+              <li class="main-nav__item">
+                <a class="main-nav__link" href="faq.html">faq</a>
+              </li>
+            </ul>
+          </nav>
+          <select class="main-header__language" name="language" id="language">
+            <option value="en">English</option>
+            <option value="de">German</option>
+            <option value="dk" selected>Danish</option>
+          </select>
+        </div>
+        <a class="main-header__booking-link button" href="booking.html">Book Now</a>
+
+        <button class="main-header__menu-toggler main-header__menu-toggler--burger">
+          <span class="visually-hidden">Menu</span>
+        </button>
+      </div>
+    </header>
+
+    <main class="page__main features features--area">
+      <header class="features__header inner-header inner-header--area">
+        <div class="inner-header__title-wrapper">
+          <h1 class="inner-header__title">The Area</h1>
+          <a class="inner-header__location" href="#vesterborg">Vesterborg, Denmark</a>
+        </div>
+        <a class="inner-header__button" href="#map">get directions</a>
+      </header>
+
+      <!-- Vesterborg Section  -->
+      <section class="features__section feature-block" id="vesterborg">
+        <!-- Picture part -->
+        <div class="feature-block__slideshow slideshow">
+          <div class="slideshow__pictures">
+            <img class="slideshow__image" src="img/area/vesterborg.jpg" alt="Beautiful river in the foresn near Vesterborg." width="546" height="478">
+            <img class="slideshow__image" src="img/area/vesterborg2.jpg" alt="Beautiful river in the foresn near Vesterborg." width="546" height="478">
+            <img class="slideshow__image" src="img/area/vesterborg3.jpg" alt="Beautiful river in the foresn near Vesterborg." width="546" height="478">
+          </div>
+          <div class="slideshow__controls">
+            <div class="slideshow__buttons">
+              <button class="slideshow__button slideshow__button--prev" type="button">
+                <svg class="slideshow__button-icon" width="34px" height="17px">
+                  <use href="img/sprite.svg#arrow"></use>
+                </svg>
+                <span class="visually-hidden">Previous image</span>
+              </button>
+              <button class="slideshow__button slideshow__button--next" type="button">
+                <svg class="slideshow__button-icon" width="34px" height="17px">
+                  <use href="img/sprite.svg#arrow"></use>
+                </svg>
+                <span class="visually-hidden">Next image</span>
+              </button>
+            </div>
+            <div class="slideshow__pagination pagination">
+              <p class="pagination__min">01</p>
+              <div class="pagination__track">
+                <div class="pagination__slider"></div>
+              </div>
+              <p class="pagination__max">05</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Text description part -->
+        <div class="feature-block__description">
+          <h2 class="feature-block__description-title">Vesterborg</h2>
+          <p class="feature-block__description-subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing...</p>
+          <p class="feature-block__description-content">
+            Løvtag’s three exclusive and comfortable cabins, Et, Ro and Ly, are designed by architect Sigurd Larsen. They all have an open space with a double bed, a double sofa bed, kitchen, separate toilet and an outdoor shower. On the roof, surrounded by treetops, there is a terrace, which is about nine meters above ground.
+          </p>
+        </div>
+      </section>
+
+      <!-- Section with simplified map  -->
+      <section class="features__section feature-simple">
+        <h2 class="visually-hidden">Lorem ipsum</h2>
+        <p class="feature-simple__title">
+          Lorem ipsum dolor sit amet, consectetur adipiscing...
+        </p>
+        <div class="feature-simple__image-wrapper">
+          <img class="feature-simple__image" src="img/area/map.png" alt="Simplified map of the Denmark." width="431" height="429">
+        </div>
+      </section>
+
+      <h2 class="features__subtitle">Activities</h2>
+
+      <!-- Restaurants Section -->
+      <section class="features__section feature-block">
+        <!-- Picture part -->
+        <div class="feature-block__slideshow slideshow">
+          <div class="slideshow__pictures">
+            <img class="slideshow__image" src="img/area/restaraunt.jpg" alt="Outside cafe in a small town." width="546" height="478">
+            <img class="slideshow__image" src="img/area/restaraunt2.jpg" alt="Outside cafe in a small town." width="546" height="478">
+          </div>
+          <div class="slideshow__controls">
+            <div class="slideshow__buttons">
+              <button class="slideshow__button slideshow__button--prev" type="button">
+                <svg class="slideshow__button-icon" width="34px" height="17px">
+                  <use href="img/sprite.svg#arrow"></use>
+                </svg>
+                <span class="visually-hidden">Previous image</span>
+              </button>
+              <button class="slideshow__button slideshow__button--next" type="button">
+                <svg class="slideshow__button-icon" width="34px" height="17px">
+                  <use href="img/sprite.svg#arrow"></use>
+                </svg>
+                <span class="visually-hidden">Next image</span>
+              </button>
+            </div>
+            <div class="slideshow__pagination pagination">
+              <p class="pagination__min">01</p>
+              <div class="pagination__track">
+                <div class="pagination__slider"></div>
+              </div>
+              <p class="pagination__max">05</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Text description part -->
+        <div class="feature-block__description">
+          <h2 class="feature-block__description-title">Restaurants & shopping</h2>
+          <div class="feature-block__tabs tabs">
+            <div class="tabs__tablist" role="tablist" aria-label="The outside features">
+              <button class="tabs__button tabs__button--active" role="tab" aria-selected="true" id="restaraunt" type="button">Restaurants</button>
+              <button class="tabs__button" role="tab" aria-selected="false" id="shops" type="button">Shops</button>
+            </div>
+
+            <div class="tabs__panel" role="tabpanel" aria-labelledby="restaraunt">
+              <p class="tabs__panel-content">
+                Løvtag’s three exclusive and comfortable cabins, Et, Ro and Ly, are designed by architect Sigurd Larsen. They all have an open space with a double bed, a double sofa bed, kitchen, separate toilet and an outdoor shower. On the roof, surrounded by treetops, there is a terrace, which is about nine meters above ground.
+              </p>
+            </div>
+
+            <div class="tabs__panel" role="tabpanel" aria-labelledby="shops" hidden>
+              <p class="tabs__panel-content">
+                Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Nature Section -->
+      <section class="features__section feature-block feature-block--reverse">
+        <!-- Text description part -->
+        <div class="feature-block__description">
+          <h2 class="feature-block__description-title">Experiences in nature</h2>
+          <div class="feature-block__tabs tabs">
+            <div class="tabs__tablist" role="tablist" aria-label="The outside features">
+              <button class="tabs__button tabs__button--active" role="tab" aria-selected="true" id="nature1" type="button">Lorem ipsum</button>
+              <button class="tabs__button" role="tab" aria-selected="false" id="nature2" type="button">Sed ut perspiciatis</button>
+            </div>
+
+            <div class="tabs__panel" role="tabpanel" aria-labelledby="nature1">
+              <p class="tabs__panel-content">
+                Løvtag’s three exclusive and comfortable cabins, Et, Ro and Ly, are designed by architect Sigurd Larsen. They all have an open space with a double bed, a double sofa bed, kitchen, separate toilet and an outdoor shower. On the roof, surrounded by treetops, there is a terrace, which is about nine meters above ground.
+              </p>
+            </div>
+
+            <div class="tabs__panel" role="tabpanel" aria-labelledby="nature2" hidden>
+              <p class="tabs__panel-content">
+                Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Picture part -->
+        <div class="feature-block__slideshow slideshow">
+          <div class="slideshow__pictures">
+            <img class="slideshow__image" src="img/area/nature.jpg" alt="Small bridge over the waterfall." width="546" height="478">
+            <img class="slideshow__image" src="img/area/nature2.jpg" alt="Small bridge over the waterfall." width="546" height="478">
+            <img class="slideshow__image" src="img/area/nature3.jpg" alt="Small bridge over the waterfall." width="546" height="478">
+            <img class="slideshow__image" src="img/area/nature4.jpg" alt="Small bridge over the waterfall." width="546" height="478">
+          </div>
+          <div class="slideshow__controls">
+            <div class="slideshow__buttons">
+              <button class="slideshow__button slideshow__button--prev" type="button">
+                <svg class="slideshow__button-icon" width="34px" height="17px">
+                  <use href="img/sprite.svg#arrow"></use>
+                </svg>
+                <span class="visually-hidden">Previous image</span>
+              </button>
+              <button class="slideshow__button slideshow__button--next" type="button">
+                <svg class="slideshow__button-icon" width="34px" height="17px">
+                  <use href="img/sprite.svg#arrow"></use>
+                </svg>
+                <span class="visually-hidden">Next image</span>
+              </button>
+            </div>
+            <div class="slideshow__pagination pagination">
+              <p class="pagination__min">01</p>
+              <div class="pagination__track">
+                <div class="pagination__slider"></div>
+              </div>
+              <p class="pagination__max">05</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Drive Section  -->
+      <section class="features__section feature-block">
+        <!-- Picture part -->
+        <div class="feature-block__slideshow slideshow">
+          <div class="slideshow__pictures">
+            <img class="slideshow__image" src="img/area/drive.jpg" alt="Forest driveway at dawn." width="546" height="478">
+            <img class="slideshow__image" src="img/area/drive2.jpg" alt="Forest driveway at dawn." width="546" height="478">
+          </div>
+          <div class="slideshow__controls">
+            <div class="slideshow__buttons">
+              <button class="slideshow__button slideshow__button--prev" type="button">
+                <svg class="slideshow__button-icon" width="34px" height="17px">
+                  <use href="img/sprite.svg#arrow"></use>
+                </svg>
+                <span class="visually-hidden">Previous image</span>
+              </button>
+              <button class="slideshow__button slideshow__button--next" type="button">
+                <svg class="slideshow__button-icon" width="34px" height="17px">
+                  <use href="img/sprite.svg#arrow"></use>
+                </svg>
+                <span class="visually-hidden">Next image</span>
+              </button>
+            </div>
+            <div class="slideshow__pagination pagination">
+              <p class="pagination__min">01</p>
+              <div class="pagination__track">
+                <div class="pagination__slider"></div>
+              </div>
+              <p class="pagination__max">05</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Text description part -->
+        <div class="feature-block__description">
+          <h2 class="feature-block__description-title">Go for a drive</h2>
+          <div class="feature-block__tabs tabs">
+            <div class="tabs__tablist" role="tablist" aria-label="The outside features">
+              <button class="tabs__button tabs__button--active" role="tab" aria-selected="true" id="drive1" type="button">Lorem ipsum</button>
+              <button class="tabs__button" role="tab" aria-selected="false" id="drive2" type="button">Quis autem</button>
+            </div>
+
+            <div class="tabs__panel" role="tabpanel" aria-labelledby="drive1">
+              <p class="tabs__panel-content">
+                Løvtag’s three exclusive and comfortable cabins, Et, Ro and Ly, are designed by architect Sigurd Larsen. They all have an open space with a double bed, a double sofa bed, kitchen, separate toilet and an outdoor shower. On the roof, surrounded by treetops, there is a terrace, which is about nine meters above ground.
+              </p>
+            </div>
+
+            <div class="tabs__panel" role="tabpanel" aria-labelledby="drive2" hidden>
+              <p class="tabs__panel-content">
+                Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Small-town Section -->
+      <section class="features__section feature-block feature-block--reverse">
+        <!-- Text description part -->
+        <div class="feature-block__description">
+          <h2 class="feature-block__description-title">Small-town charm</h2>
+          <div class="feature-block__tabs tabs">
+            <div class="tabs__tablist" role="tablist" aria-label="The outside features">
+              <button class="tabs__button tabs__button--active" role="tab" aria-selected="true" id="town1" type="button">Lorem ipsum</button>
+              <button class="tabs__button" role="tab" aria-selected="false" id="town2" type="button">Sed ut perspiciatis</button>
+            </div>
+
+            <div class="tabs__panel" role="tabpanel" aria-labelledby="town1">
+              <p class="tabs__panel-content">
+                Løvtag’s three exclusive and comfortable cabins, Et, Ro and Ly, are designed by architect Sigurd Larsen. They all have an open space with a double bed, a double sofa bed, kitchen, separate toilet and an outdoor shower. On the roof, surrounded by treetops, there is a terrace, which is about nine meters above ground.
+              </p>
+            </div>
+
+            <div class="tabs__panel" role="tabpanel" aria-labelledby="town2" hidden>
+              <p class="tabs__panel-content">
+                Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Picture part -->
+        <div class="feature-block__slideshow slideshow">
+          <div class="slideshow__pictures">
+            <img class="slideshow__image" src="img/area/town.jpg" alt="Small town under the hill." width="546" height="478">
+            <img class="slideshow__image" src="img/area/town2.jpg" alt="Small town under the hill." width="546" height="478">
+            <img class="slideshow__image" src="img/area/town3.jpg" alt="Small town under the hill." width="546" height="478">
+            <img class="slideshow__image" src="img/area/town4.jpg" alt="Small town under the hill." width="546" height="478">
+          </div>
+          <div class="slideshow__controls">
+            <div class="slideshow__buttons">
+              <button class="slideshow__button slideshow__button--prev" type="button">
+                <svg class="slideshow__button-icon" width="34px" height="17px">
+                  <use href="img/sprite.svg#arrow"></use>
+                </svg>
+                <span class="visually-hidden">Previous image</span>
+              </button>
+              <button class="slideshow__button slideshow__button--next" type="button">
+                <svg class="slideshow__button-icon" width="34px" height="17px">
+                  <use href="img/sprite.svg#arrow"></use>
+                </svg>
+                <span class="visually-hidden">Next image</span>
+              </button>
+            </div>
+            <div class="slideshow__pagination pagination">
+              <p class="pagination__min">01</p>
+              <div class="pagination__track">
+                <div class="pagination__slider"></div>
+              </div>
+              <p class="pagination__max">05</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="features__map" id="map">
+        <h2 class="visually-hidden">Map</h2>
+        <img class="features__map-image" src="img/index/forest-map.png" alt="Map of the area." width="1408" height="517">
+        <a class="features__map-link" href="#">We Are Here</a>
+      </section>
+
+    </main>
+
+    <!-- footer  -->
+    <footer class="page__footer footer">
+      <div class="footer-wrapper">
+        <!-- subscription section -->
+        <div class="footer__subscription">
+          <form
+            class="footer__form"
+            action="https://httpbin.org/post"
+            method="post"
+          >
+            <h2 class="visually-hidden">Subscribe to our Newsletter</h2>
+            <label class="footer__subscription-label" for="subscription">
+              Newsletter
+            </label>
+            <div class="footer__input-wrapper">
+              <input
+                class="footer__subscription-input"
+                type="email"
+                placeholder="Email Adrdess"
+                id="subscription"
+                name="subscription-mail"
+                required
+              >
+              <button class="footer__subscription-button" type="submit">
+                <svg class="footer__subscription-arrow" width="34" height="17">
+                  <use href="img/sprite.svg#arrow"></use>
+                </svg>
+                <span class="visually-hidden">Subscribe</span>
+              </button>
+            </div>
+            <p class="footer__text">
+              Sign up to our newsletter for special things and receive 10% off your next order.
+            </p>
+          </form>
+        </div>
+
+        <!-- links section  -->
+        <div class="footer__links">
+          <!-- Official docs links -->
+          <ul class="footer__links-list">
+            <li class="footer__links-item">
+              <a class="footer__link"  href="#">TERMS AND CONDITIONS</a>
+            </li>
+            <li class="footer__links-item">
+              <a class="footer__link"  href="#">CENCELLATION POLICY</a>
+            </li>
+            <li class="footer__links-item">
+              <a class="footer__link"  href="#">PRIVACY POLICY</a>
+            </li>
+          </ul>
+          <!-- payment methods list -->
+          <ul class="footer__payment-list">
+            <li class="footer__payment-item">
+              <svg class="footer__payment-icon" width="51" height="51">
+                <use href="img/sprite.svg#paypal"></use>
+              </svg>
+              <span class="visually-hidden">Paypal</span>
+            </li>
+            <li class="footer__payment-item">
+              <svg class="footer__payment-icon" width="49" height="49">
+                <use href="img/sprite.svg#mastercard"></use>
+              </svg>
+              <span class="visually-hidden">MasterCard</span>
+            </li>
+            <li class="footer__payment-item">
+              <svg class="footer__payment-icon" width="48" height="48">
+                <use href="img/sprite.svg#visa"></use>
+              </svg>
+              <span class="visually-hidden">Visa</span>
+            </li>
+            <li class="footer__payment-item">
+              <svg class="footer__payment-icon" width="32" height="32">
+                <use href="img/sprite.svg#bank-transfer"></use>
+              </svg>
+              <span class="visually-hidden">Bank Transfer</span>
+            </li>
+          </ul>
+        </div>
+
+        <!-- copyright  -->
+        <div class="footer__copyright">
+          © 2021 The Glass Huts
+        </div>
+      </div>
+    </footer>
+    <!-- js -->
+    <script src="js/main.js" type="module"></script>
+  </body>
+</html>

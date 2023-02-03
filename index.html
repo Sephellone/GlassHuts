@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html class="page" lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="favicon.ico">
+    <link rel="manifest" href="manifest.webmanifest">
+    <link rel="stylesheet" href="css/style.min.css">
+    <title>The Glass Huts</title>
+  </head>
+
+  <body class="page__body">
+    <header class="page__header">
+      <div class="main-header">
+        <a class="main-header__logo-link" href="index.html">
+          <img class="main-header__logo" src="img/logo.svg" alt="The Glass Huts logo" width="70" height="65">
+        </a>
+        <div class="main-header__nav-wrapper main-header__nav-wrapper--closed">
+          <nav class="main-header__nav main-nav">
+            <ul class="main-nav__list">
+              <li class="main-nav__item">
+                <a class="main-nav__link" href="index.html">Home</a>
+              </li>
+              <li class="main-nav__item">
+                <a class="main-nav__link" href="hut.html">the hut</a>
+              </li>
+              <li class="main-nav__item">
+                <a class="main-nav__link" href="area.html">The area</a>
+              </li>
+              <li class="main-nav__item">
+                <a class="main-nav__link" href="booking.html">booking</a>
+              </li>
+              <li class="main-nav__item">
+                <a class="main-nav__link" href="about.html">about us</a>
+              </li>
+              <li class="main-nav__item">
+                <a class="main-nav__link" href="faq.html">faq</a>
+              </li>
+            </ul>
+          </nav>
+          <select class="main-header__language" name="language" id="language">
+            <option value="en">English</option>
+            <option value="de">German</option>
+            <option value="dk" selected>Danish</option>
+          </select>
+        </div>
+        <a class="main-header__booking-link button" href="booking.html">Book Now</a>
+
+        <button class="main-header__menu-toggler main-header__menu-toggler--burger">
+          <span class="visually-hidden">Menu</span>
+        </button>
+      </div>
+    </header>
+
+
+    <main class="page__main main-index">
+      <h1 class="visually-hidden">Hut hotel near Mariager Fjord in Denmark</h1>
+
+      <!-- index header with slider -->
+      <section class="main-index__header index-header">
+
+        <!-- image slider with buttons and pagination  -->
+        <div class="index-header__slider slideshow">
+          <div class="slideshow__pictures slideshow__pictures--index index-header__slider-inner">
+            <img class="slideshow__image slideshow__image--index" src="img/slider/01.jpg" alt="Beautiful glass hut with cute lighting on evening sky background" width="1409" height="701">
+            <img class="slideshow__image slideshow__image--index" src="img/slider/02.jpg" alt="Beautiful glass hut with cute lighting on evening sky background" width="1409" height="701">
+            <img class="slideshow__image slideshow__image--index" src="img/slider/03.jpg" alt="Beautiful glass hut with cute lighting on evening sky background" width="1409" height="701">
+            <img class="slideshow__image slideshow__image--index" src="img/slider/04.jpg" alt="Beautiful glass hut with cute lighting on evening sky background" width="1409" height="701">
+            <img class="slideshow__image slideshow__image--index" src="img/slider/05.jpg" alt="Beautiful glass hut with cute lighting on evening sky background" width="1409" height="701">
+            <img class="slideshow__image slideshow__image--index" src="img/slider/06.jpg" alt="Beautiful glass hut with cute lighting on evening sky background" width="1409" height="701">
+          </div>
+          <div class="slideshow__controls slideshow__controls--index">
+            <div class="slideshow__buttons">
+              <button class="slideshow__button slideshow__button--index slideshow__button--prev" type="button">
+                <svg class="slideshow__button-icon" width="34px" height="17px">
+                  <use href="img/sprite.svg#arrow"></use>
+                </svg>
+                <span class="visually-hidden">Previous image</span>
+              </button>
+              <button class="slideshow__button slideshow__button--index slideshow__button--next" type="button">
+                <svg class="slideshow__button-icon" width="34px" height="17px">
+                  <use href="img/sprite.svg#arrow"></use>
+                </svg>
+                <span class="visually-hidden">Next image</span>
+              </button>
+            </div>
+            <div class="slideshow__pagination pagination pagination--index">
+              <p class="pagination__min">01</p>
+              <div class="pagination__track pagination__track--index">
+                <div class="pagination__slider pagination__slider--index"></div>
+              </div>
+              <p class="pagination__max">06</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- header content -->
+        <div class="index-header__container">
+          <h2 class="index-header__title">Find peace in the Forest</h2>
+          <p class="index-header__subtitle">Come and stay in out hut hotel near Mariager Fjord in Denmark</p>
+        </div>
+        <div class="index-header__book book-button">
+          <a class="book-button-link button button--big" href="booking.html">
+            Book Now
+          </a>
+          <div class="book-button__description">
+            <div class="book-button__description-wrapper">
+              <p class="book-button__from">from</p>
+              <p class="book-button__price">€3.200</p>
+              <p class="book-button__per-element">per night</p>
+            </div>
+          </div>
+        </div>
+
+
+      </section>
+
+      <!-- cabins section  -->
+      <section class="main-index__section main-index__cabins cabins">
+        <div class="cabins__description-wrapper">
+          <div class="cabins__description">
+            <h2 class="cabins__title">The Cabins</h2>
+            <p class="cabins__text">Løvtag’s three exclusive and comfortable cabins, Et, Ro and Ly, are designed by architect Sigurd Larsen. They all have an open space with a double bed, a double sofa bed, kitchen, separate toilet and an outdoor shower. On the roof, surrounded by treetops, there is a terrace, which is about nine meters above ground. The cottages are built around tall, old trees that go through the entire cottage from floor to ceiling.</p>
+            <a class="cabins__link" href="hut.html">Read More</a>
+          </div>
+          <img class="cabins__image" src="img/index/cabin.jpg" alt="View from the Cabin. Big comfy bad in front of panoramic window." width="693" height="438">
+        </div>
+        <div class="cabins__gallery">
+          <img class="cabins__image" src="img/index/gallery-01.jpg" alt="Cabin at dawn." width="432" height="387">
+          <img class="cabins__image" src="img/index/gallery-02.jpg" alt="Mountains seen from cabin panoramic windows." width="432" height="387">
+          <img class="cabins__image" src="img/index/gallery-03.jpg" alt="Couple laying on the bed seen through cabins glass roof." width="432" height="387">
+        </div>
+      </section>
+
+      <!-- forest section  -->
+      <section class="main-index__section main-index__forest forest">
+        <div class="forest__map-wrapper">
+          <a class="forest__map-button" href="#index-contacts">We Are Here</a>
+        </div>
+
+        <div class="forest__description">
+          <div class="forest__description-wrapper">
+            <h2 class="forest__title">The Forest</h2>
+            <p class="forest__text">Løvtag’s three exclusive and comfortable cabins, Et, Ro and Ly, are designed by architect Sigurd Larsen. They all have an open space with a double bed, a double sofa bed, kitchen, separate toilet and an outdoor shower. On the roof, surrounded by treetops, there is a terrace, which is about nine meters above ground. The cottages are built around tall, old trees that go through the entire cottage from floor to ceiling.</p>
+            <a class="forest__link" href="area.html">Read More</a>
+          </div>
+        </div>
+      </section>
+
+      <!-- facilities section  -->
+      <section class="main-index__section main-index__facilities facilities">
+        <div class="facilities__wrapper">
+          <h2 class="facilities__title">Facilities</h2>
+          <ul class="facilities__list">
+            <li class="facilities__item">
+              <svg class="facilities__icon" width="70" height="70">
+                <use href="img/sprite.svg#fridge"></use>
+              </svg>
+              Mini fridge
+            </li>
+            <li class="facilities__item">
+              <svg class="facilities__icon" width="70" height="70">
+                <use href="img/sprite.svg#kitchen"></use>
+              </svg>
+              Kitchenette
+            </li>
+            <li class="facilities__item">
+              <svg class="facilities__icon" width="70" height="70">
+                <use href="img/sprite.svg#coffee"></use>
+              </svg>
+              Coffee machine
+            </li>
+            <li class="facilities__item">
+              <svg class="facilities__icon" width="70" height="70">
+                <use href="img/sprite.svg#kettle"></use>
+              </svg>
+              Electric tea kettle
+            </li>
+            <li class="facilities__item">
+              <svg class="facilities__icon" width="70" height="70">
+                <use href="img/sprite.svg#parking"></use>
+              </svg>
+              Parking
+            </li>
+            <li class="facilities__item">
+              <svg class="facilities__icon" width="70" height="70">
+                <use href="img/sprite.svg#views"></use>
+              </svg>
+              Breathtaking views
+            </li>
+            <li class="facilities__item">
+              <svg class="facilities__icon" width="70" height="70">
+                <use href="img/sprite.svg#heating"></use>
+              </svg>
+              Floor heating
+            </li>
+            <li class="facilities__item">
+              <svg class="facilities__icon" width="70" height="70">
+                <use href="img/sprite.svg#plug"></use>
+              </svg>
+              230V
+            </li>
+            <li class="facilities__item">
+              <svg class="facilities__icon" width="70" height="70">
+                <use href="img/sprite.svg#wifi"></use>
+              </svg>
+              Wi-Fi
+            </li>
+            <li class="facilities__item">
+              <svg class="facilities__icon" width="70" height="70">
+                <use href="img/sprite.svg#shower"></use>
+              </svg>
+              Shower
+            </li>
+            <li class="facilities__item">
+              <svg class="facilities__icon" width="70" height="70">
+                <use href="img/sprite.svg#toilet"></use>
+              </svg>
+              Flushing toilets
+            </li>
+            <li class="facilities__item">
+              <svg class="facilities__icon" width="70" height="70">
+                <use href="img/sprite.svg#towels"></use>
+              </svg>
+              Bedding & towels
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- about section  -->
+      <section class="main-index__section main-index__about">
+        <h2 class="visually-hidden">About us</h2>
+        <div class="main-index__about-wrapper">
+          <img class="main-index__about-image" src="img/index/about-01.jpg" alt="Beautiful mountain landscape and the cabin." width="704" height="559">
+          <img class="main-index__about-image" src="img/index/about-02.jpg" alt="Two people having breakfast on the bed inside the cabin." width="704" height="559">
+        </div>
+        <a class="main-index__about-link" href="about.html">More about us</a>
+      </section>
+
+      <!-- contacts section  -->
+      <section class="main-index__section main-index__contacts contacts" id="index-contacts">
+        <div class="contacts__wrapper">
+          <h2 class="contacts__title">Stay in touch with us</h2>
+          <p class="contacts__text">Vesterborg, Denmark</p>
+          <p class="contacts__contacts">
+            <a class="contacts__link" href="tel:+123456789000">+123 456 789 000</a>
+            <a href="mailto:info@theglasshuts.com" class="contacts__link">info@theglasshuts.com</a>
+          </p>
+          <h3 class="visually-hidden">Find us on social network</h3>
+          <ul class="contacts__social-list">
+            <li class="contacts__social-item">
+              <a class="contacts__social-link" href="#">
+                <span class="visually-hidden">Instagram</span>
+                <svg class="contacts__social-icon" width="21" height="21">
+                  <use href="img/sprite.svg#instagram"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="contacts__social-item">
+              <a class="contacts__social-link" href="#">
+                <span class="visually-hidden">Facebook</span>
+                <svg class="contacts__social-icon" width="10" height="21">
+                  <use href="img/sprite.svg#facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="contacts__social-item">
+              <a class="contacts__social-link" href="#">
+                <span class="visually-hidden">Twitter</span>
+                <svg class="contacts__social-icon" width="22" height="18">
+                  <use href="img/sprite.svg#twitter"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="contacts__book">
+          <div class="contacts__book-wrapper">
+            <img class="contacts__book-image" src="img/index/book-image.jpg" alt="" width="386" height="188">
+            <div class="contacts__book-button book-button">
+              <a class="book-button-link button button--big" href="booking.html">
+                Book Now
+              </a>
+              <div class="book-button__description">
+                <div class="book-button__description-wrapper">
+                  <p class="book-button__from">from</p>
+                  <p class="book-button__price">€3.200</p>
+                  <p class="book-button__per-element">per night</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </section>
+    </main>
+
+    <!-- footer  -->
+    <footer class="page__footer footer">
+      <div class="footer-wrapper">
+        <!-- subscription section -->
+        <div class="footer__subscription">
+          <form
+            class="footer__form"
+            action="https://httpbin.org/post"
+            method="post"
+          >
+            <h2 class="visually-hidden">Subscribe to our Newsletter</h2>
+            <label class="footer__subscription-label" for="subscription">
+              Newsletter
+            </label>
+            <div class="footer__input-wrapper">
+              <input
+                class="footer__subscription-input"
+                type="email"
+                placeholder="Email Adrdess"
+                id="subscription"
+                name="subscription-mail"
+                required
+              >
+              <button class="footer__subscription-button" type="submit">
+                <svg class="footer__subscription-arrow" width="34" height="17">
+                  <use href="img/sprite.svg#arrow"></use>
+                </svg>
+                <span class="visually-hidden">Subscribe</span>
+              </button>
+            </div>
+            <p class="footer__text">
+              Sign up to our newsletter for special things and receive 10% off your next order.
+            </p>
+          </form>
+        </div>
+
+        <!-- links section  -->
+        <div class="footer__links">
+          <!-- Official docs links -->
+          <ul class="footer__links-list">
+            <li class="footer__links-item">
+              <a class="footer__link"  href="#">TERMS AND CONDITIONS</a>
+            </li>
+            <li class="footer__links-item">
+              <a class="footer__link"  href="#">CENCELLATION POLICY</a>
+            </li>
+            <li class="footer__links-item">
+              <a class="footer__link"  href="#">PRIVACY POLICY</a>
+            </li>
+          </ul>
+          <!-- payment methods list -->
+          <ul class="footer__payment-list">
+            <li class="footer__payment-item">
+              <svg class="footer__payment-icon" width="51" height="51">
+                <use href="img/sprite.svg#paypal"></use>
+              </svg>
+              <span class="visually-hidden">Paypal</span>
+            </li>
+            <li class="footer__payment-item">
+              <svg class="footer__payment-icon" width="49" height="49">
+                <use href="img/sprite.svg#mastercard"></use>
+              </svg>
+              <span class="visually-hidden">MasterCard</span>
+            </li>
+            <li class="footer__payment-item">
+              <svg class="footer__payment-icon" width="48" height="48">
+                <use href="img/sprite.svg#visa"></use>
+              </svg>
+              <span class="visually-hidden">Visa</span>
+            </li>
+            <li class="footer__payment-item">
+              <svg class="footer__payment-icon" width="32" height="32">
+                <use href="img/sprite.svg#bank-transfer"></use>
+              </svg>
+              <span class="visually-hidden">Bank Transfer</span>
+            </li>
+          </ul>
+        </div>
+
+        <!-- copyright  -->
+        <div class="footer__copyright">
+          © 2021 The Glass Huts
+        </div>
+      </div>
+    </footer>
+
+    <!-- js -->
+    <script src="js/main.js" type="module"></script>
+  </body>
+</html>

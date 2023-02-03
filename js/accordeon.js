@@ -1,0 +1,1 @@
+import{toggleClasses}from"./util.js";const initAccordeon=(e,o,t)=>{e&&e.length&&e.forEach((e=>{e.querySelector(".accordeon-toggler")?.addEventListener("click",(()=>{toggleClasses(e,o,t)}))}))};export{initAccordeon};

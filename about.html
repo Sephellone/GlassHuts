@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html class="page" lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="favicon.ico">
+    <link rel="manifest" href="manifest.webmanifest">
+    <link rel="stylesheet" href="css/style.min.css">
+    <title>About us</title>
+  </head>
+  <body class="page__body">
+    <header class="page__header">
+      <div class="main-header">
+        <a class="main-header__logo-link" href="index.html">
+          <img class="main-header__logo" src="img/logo.svg" alt="The Glass Huts logo" width="70" height="65">
+        </a>
+        <div class="main-header__nav-wrapper main-header__nav-wrapper--closed">
+          <nav class="main-header__nav main-nav">
+            <ul class="main-nav__list">
+              <li class="main-nav__item">
+                <a class="main-nav__link" href="index.html">Home</a>
+              </li>
+              <li class="main-nav__item">
+                <a class="main-nav__link" href="hut.html">the hut</a>
+              </li>
+              <li class="main-nav__item">
+                <a class="main-nav__link" href="area.html">The area</a>
+              </li>
+              <li class="main-nav__item">
+                <a class="main-nav__link" href="booking.html">booking</a>
+              </li>
+              <li class="main-nav__item">
+                <a class="main-nav__link" href="about.html">about us</a>
+              </li>
+              <li class="main-nav__item">
+                <a class="main-nav__link" href="faq.html">faq</a>
+              </li>
+            </ul>
+          </nav>
+          <select class="main-header__language" name="language" id="language">
+            <option value="en">English</option>
+            <option value="de">German</option>
+            <option value="dk" selected>Danish</option>
+          </select>
+        </div>
+        <a class="main-header__booking-link button" href="booking.html">Book Now</a>
+
+        <button class="main-header__menu-toggler main-header__menu-toggler--burger">
+          <span class="visually-hidden">Menu</span>
+        </button>
+      </div>
+    </header>
+
+    <main class="page__main about-us">
+      <header class="about-us__header inner-header inner-header--about">
+        <h1 class="inner-header__title">About Us</h1>
+        <div class="inner-header__button-wrapper">
+          <a class="inner-header__button" href="#contacts">contact us</a>
+          <a class="inner-header__button" href="faq.html">read FAQ</a>
+        </div>
+      </header>
+
+      <!-- Subheader Section  -->
+      <section class="about-us__section about-us__subheader">
+        <!-- Picture part -->
+        <div class="about-us__image-wrapper">
+          <img class="slideshow__image" src="img/aboutus/about-1.jpg" alt="Beautiful river in the foresn near Vesterborg." width="546" height="478">
+        </div>
+
+        <!-- Text description part -->
+        <div class="about-us__description">
+          <h2 class="about-us__subtitle">“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.”</h2>
+          <p class="about-us__text">
+            Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.
+          </p>
+        </div>
+      </section>
+
+      <section class="about-us__gallery gallery">
+        <h2 class="about-us__section-title gallery__title">Lorem ipsum dolor sit amet, consectetur adipiscing...</h2>
+        <div class="gallery__wrapper">
+          <img class="gallery__image gallery__image--top" src="img/aboutus/about-2.jpg" alt="The Hut photo" width="432" height="387">
+          <img class="gallery__image gallery__image--long" src="img/aboutus/about-4.jpg" alt="The Hut photo" width="432" height="387">
+          <img class="gallery__image gallery__image--bottom" src="img/aboutus/about-2.jpg" alt="The Hut photo" width="432" height="387">
+          <img class="gallery__image" src="img/aboutus/about-3.jpg" alt="The Hut photo" width="432" height="387">
+          <p class="gallery__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        </div>
+      </section>
+
+      <section class="about-us__section about-us__contacts" id="contacts">
+        <h2 class="about-us__section-title">Stay in touch with us</h2>
+        <div class="about-us__contacts-wrapper">
+          <div class="about-us__contacts-info contacts">
+            <div class="contacts__wrapper">
+              <p class="contacts__text">Vesterborg, Denmark</p>
+              <p class="contacts__contacts">
+                <a class="contacts__link" href="tel:+123456789000">+123 456 789 000</a>
+                <a href="mailto:info@theglasshuts.com" class="contacts__link">info@theglasshuts.com</a>
+              </p>
+              <h3 class="visually-hidden">Find us on social network</h3>
+              <ul class="contacts__social-list">
+                <li class="contacts__social-item">
+                  <a class="contacts__social-link" href="#">
+                    <span class="visually-hidden">Instagram</span>
+                    <svg class="contacts__social-icon" width="21" height="21">
+                      <use href="img/sprite.svg#instagram"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="contacts__social-item">
+                  <a class="contacts__social-link" href="#">
+                    <span class="visually-hidden">Facebook</span>
+                    <svg class="contacts__social-icon" width="10" height="21">
+                      <use href="img/sprite.svg#facebook"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="contacts__social-item">
+                  <a class="contacts__social-link" href="#">
+                    <span class="visually-hidden">Twitter</span>
+                    <svg class="contacts__social-icon" width="22" height="18">
+                      <use href="img/sprite.svg#twitter"></use>
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <form class="about-us__form about-form" action="https://httpbin.org/post" method="post">
+            <div class="about-us__form-wrapper">
+              <div class="about-form__input-wrapper">
+                <input class="about-form__input" type="text" name="firstName" id="firstName" placeholder="" required>
+                <label class="about-form__label" for="firstName">First Name</label>
+              </div>
+              <div class="about-form__input-wrapper">
+                <input class="about-form__input" type="text" name="lastName" id="lastName" placeholder="">
+                <label class="about-form__label" for="lastName">Last Name</label>
+              </div>
+            </div>
+            <div class="about-form__input-wrapper">
+              <input class="about-form__input" type="email" name="email" id="email" placeholder="" required>
+              <label class="about-form__label" for="email">Email</label>
+            </div>
+            <div class="about-form__input-wrapper">
+              <input class="about-form__input" type="text" name="subject" id="subject" placeholder="">
+              <label class="about-form__label" for="subject">Subject</label>
+            </div>
+            <div class="about-form__input-wrapper">
+              <textarea class="about-form__textarea" name="message" id="message" placeholder="" required></textarea>
+              <label class="about-form__label" for="message">Message</label>
+            </div>
+            <button class="about-form__submit button" type="submit">send</button>
+
+          </form>
+        </div>
+      </section>
+
+      <img class="about-us__with-love" src="img/aboutus/love.svg" alt="From Denmark, with love.">
+    </main>
+
+    <!-- footer  -->
+    <footer class="page__footer footer">
+      <div class="footer-wrapper">
+        <!-- subscription section -->
+        <div class="footer__subscription">
+          <form
+            class="footer__form"
+            action="https://httpbin.org/post"
+            method="post"
+          >
+            <h2 class="visually-hidden">Subscribe to our Newsletter</h2>
+            <label class="footer__subscription-label" for="subscription">
+              Newsletter
+            </label>
+            <div class="footer__input-wrapper">
+              <input
+                class="footer__subscription-input"
+                type="email"
+                placeholder="Email Adrdess"
+                id="subscription"
+                name="subscription-mail"
+                required
+              >
+              <button class="footer__subscription-button" type="submit">
+                <svg class="footer__subscription-arrow" width="34" height="17">
+                  <use href="img/sprite.svg#arrow"></use>
+                </svg>
+                <span class="visually-hidden">Subscribe</span>
+              </button>
+            </div>
+            <p class="footer__text">
+              Sign up to our newsletter for special things and receive 10% off your next order.
+            </p>
+          </form>
+        </div>
+
+        <!-- links section  -->
+        <div class="footer__links">
+          <!-- Official docs links -->
+          <ul class="footer__links-list">
+            <li class="footer__links-item">
+              <a class="footer__link"  href="#">TERMS AND CONDITIONS</a>
+            </li>
+            <li class="footer__links-item">
+              <a class="footer__link"  href="#">CENCELLATION POLICY</a>
+            </li>
+            <li class="footer__links-item">
+              <a class="footer__link"  href="#">PRIVACY POLICY</a>
+            </li>
+          </ul>
+          <!-- payment methods list -->
+          <ul class="footer__payment-list">
+            <li class="footer__payment-item">
+              <svg class="footer__payment-icon" width="51" height="51">
+                <use href="img/sprite.svg#paypal"></use>
+              </svg>
+              <span class="visually-hidden">Paypal</span>
+            </li>
+            <li class="footer__payment-item">
+              <svg class="footer__payment-icon" width="49" height="49">
+                <use href="img/sprite.svg#mastercard"></use>
+              </svg>
+              <span class="visually-hidden">MasterCard</span>
+            </li>
+            <li class="footer__payment-item">
+              <svg class="footer__payment-icon" width="48" height="48">
+                <use href="img/sprite.svg#visa"></use>
+              </svg>
+              <span class="visually-hidden">Visa</span>
+            </li>
+            <li class="footer__payment-item">
+              <svg class="footer__payment-icon" width="32" height="32">
+                <use href="img/sprite.svg#bank-transfer"></use>
+              </svg>
+              <span class="visually-hidden">Bank Transfer</span>
+            </li>
+          </ul>
+        </div>
+
+        <!-- copyright  -->
+        <div class="footer__copyright">
+          © 2021 The Glass Huts
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

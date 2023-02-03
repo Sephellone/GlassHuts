@@ -1,0 +1,1 @@
+const toggleClasses=(e,s,t)=>{e.classList.contains(s)?(e.classList.remove(s),e.classList.add(t)):(e.classList.remove(t),e.classList.add(s))},getTwoDigitsNumber=e=>{let s=e.toString();return e<10&&(s="0"+e),s},calcDaysBetweenDates=(e,s)=>{const t=s.getTime()-e.getTime();return Math.ceil(t/864e5)};export{toggleClasses,getTwoDigitsNumber,calcDaysBetweenDates};
