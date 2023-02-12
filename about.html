@@ -42,6 +42,30 @@
             <option value="de">German</option>
             <option value="dk" selected>Danish</option>
           </select>
+          <div class="main-header__pseudo-select pseudo-select">
+            <button class="pseudo-select__button pseudo-select__main" type="button">
+              <svg class="pseudo-select__icon" width="25px" height="25px" aria-hidden="true">
+                <use href="img/sprite.svg#denmark"></use>
+              </svg>
+            </button>
+            <div class="pseudo-select__options-list pseudo-select__options-list--closed">
+              <button class="pseudo-select__button pseudo-select__option" type="button">
+                <svg class="pseudo-select__icon" width="25px" height="25px" aria-hidden="true">
+                  <use href="img/sprite.svg#denmark"></use>
+                </svg>
+              </button>
+              <button class="pseudo-select__button pseudo-select__option" type="button">
+                <svg class="pseudo-select__icon" width="25px" height="25px" aria-hidden="true">
+                  <use href="img/sprite.svg#germany"></use>
+                </svg>
+              </button>
+              <button class="pseudo-select__button pseudo-select__option" type="button">
+                <svg class="pseudo-select__icon" width="25px" height="25px" aria-hidden="true">
+                  <use href="img/sprite.svg#united-kingdom"></use>
+                </svg>
+              </button>
+            </div>
+          </div>
         </div>
         <a class="main-header__booking-link button" href="booking.html">Book Now</a>
 
@@ -244,5 +268,7 @@
         </div>
       </div>
     </footer>
+    <!-- js -->
+    <script src="js/main.js" type="module"></script>
   </body>
 </html>
