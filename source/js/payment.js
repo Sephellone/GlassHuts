@@ -34,7 +34,6 @@ const initPaymentForm = () => {
     if (discount != 0) {
       discountElement.classList.remove('total__element--hidden');
     }
-
   }
 }
 

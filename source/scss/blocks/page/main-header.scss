@@ -42,7 +42,13 @@
   align-items: center;
 }
 
+.main-header__pseudo-select {
+  align-self: center;
+  padding-top: 3px;
+}
+
 .main-header__language {
+  display: none;
   margin: 0;
   padding: 16px 0 12px 0;
 

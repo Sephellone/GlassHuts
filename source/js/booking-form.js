@@ -3,6 +3,7 @@ import { updateTotal } from './services.js';
 
 
 const ACCOMODATION_PRICE = 3200;
+const booking = document.querySelector('.booking__form');
 const totalList = document.querySelector('.total__details');
 const totalSum = document.querySelector('#final-amount');
 const buttonLess = document.querySelector('#less-guests');
@@ -15,6 +16,39 @@ const nightsCountElement = document.querySelector('#nights');
 const accomodationPriceElement = document.querySelector('#nightsPrice');
 
 const bookButton = document.querySelector('.total__submit-button');
+
+// loading data from sessionStorage to booking form
+const loadSavedValues = () => {
+  if (booking) {
+    if (sessionStorage.checkin) {
+      checkinField.value = sessionStorage.checkin;
+    }
+
+    if (sessionStorage.checkout) {
+      checkoutField.value = sessionStorage.checkout;
+    }
+
+    if (sessionStorage.guests) {
+      guests.value = sessionStorage.guests;
+    }
+
+    if (sessionStorage.nights) {
+      nightsCountElement.textContent = sessionStorage.nights;
+      accomodationPriceElement.textContent = sessionStorage.nights * ACCOMODATION_PRICE;
+      updateTotal(totalList, totalSum);
+    }
+
+    if (sessionStorage.servicesCheckboxes) {
+      const checkboxes = sessionStorage.servicesCheckboxes.split(',');
+      const servicesCheckboxes = document.querySelectorAll('.checkbox-control__input');
+      servicesCheckboxes.forEach(checkbox => {
+        if(checkboxes.includes(checkbox.name)) {
+          checkbox.checked = true;
+        }
+      })
+    }
+  }
+};
 
 // Actions for buttons around guests number field
 const initGuestsButtons = () => {
@@ -118,7 +152,6 @@ const initBookButton = () => {
             sessionStorage.total = totalSum.textContent;
             sessionStorage.nights = nightsCountElement.textContent;
             sessionStorage.accomodation = accomodationPriceElement.textContent;
-            console.log(sessionStorage);
             window.location = evt.currentTarget.href;
           } else {
             alert('You can`t checkout before you check in :) ')
@@ -132,4 +165,4 @@ const initBookButton = () => {
   }
 };
 
-export {initGuestsButtons, initDateSelection, initBookButton};
+export {initGuestsButtons, initDateSelection, initBookButton, loadSavedValues};

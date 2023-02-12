@@ -8,6 +8,16 @@ const toggleClasses = (element, closedClass, openClass) => {
   }
 };
 
+const getCheckedCheckboxes = (checkboxesArray) => {
+  const checkedCheckboxes = [];
+  checkboxesArray.forEach(checkbox => {
+    if(checkbox.checked) {
+      checkedCheckboxes.push(checkbox.name);
+    }
+  })
+  return checkedCheckboxes;
+}
+
 const getTwoDigitsNumber = (number) => {
   let newNumber = number.toString();
   if (number < 10) {
@@ -25,4 +35,4 @@ const calcDaysBetweenDates = (date1, date2) => {
 };
 
 
-export {toggleClasses, getTwoDigitsNumber, calcDaysBetweenDates};
+export {toggleClasses, getTwoDigitsNumber, calcDaysBetweenDates, getCheckedCheckboxes};
