@@ -175,15 +175,17 @@
 
 @media (max-width: $mobile-width) {
   .inner-header {
-    padding: 3vw;
+    height: 45vw;
+    padding: 5vw 3vw;
   }
 
   .inner-header__title {
-    font-size: calc(10px + 3vw);
+    font-size: calc(16px + 3.5vw);
     margin-bottom: 1.5vw;
   }
 
   .inner-header__location {
+    font-size: 14px;
     &::before {
       width: 6px;
       height: 10px;
@@ -192,5 +194,6 @@
 
   .inner-header__button {
     min-width: 120px;
+    font-size: calc(10px + 0.5vw);
   }
 }

@@ -78,17 +78,19 @@
 
 @media (max-width: $mobile-width) {
   .index-header {
+    height: 60vw;
     padding-bottom: 50px;
   }
 
   .index-header__title {
     margin-bottom: 20px;
-    font-size: calc(14px + 3vw);
+    font-size: calc(16px + 3vw);
   }
 
   .index-header__subtitle {
     max-width: 200px;
     padding: 0 20px;
+    font-size: calc(12px + 0.5vw);
   }
 
   .index-header__book {

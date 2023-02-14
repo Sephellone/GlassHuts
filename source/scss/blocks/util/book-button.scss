@@ -64,8 +64,17 @@
     flex-grow: 1;
   }
 
-  // .book-button__description {
-  //   min-width: 100px;
-  // }
+  .book-button__from,
+  .book-button__per-element {
+    font-size: calc(10px + 0.6vw);
+    line-height: 140%;
+  }
 
+  .book-button__price {
+    font-size: calc(12px + 0.5vw);
+
+    &::first-letter {
+      font-weight: 400;
+    }
+  }
 }
